@@ -262,6 +262,29 @@ svg #letter {
           animation-delay: .6s;
 }
 
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -299,7 +322,7 @@ svg #letter {
 
 .hero-text-box span {
   color: #fff;
-  font-size: 2.8em;
+  font-size: 2.4em;
   letter-spacing: 2px;
   line-height: 100%;
   font-family: 'Archivo Black', 'Helvetica', 'Arial', sans-serif;
@@ -307,7 +330,5 @@ svg #letter {
   text-transform: uppercase;
   position: relative;
   left: 74px;
-
-}
 
 }
