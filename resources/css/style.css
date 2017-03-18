@@ -50,8 +50,8 @@ h1 {
 ************************/
 
 header {
-  background-image: -webkit-linear-gradient(left, rgba(43, 88, 118, 0.8), rgba(78, 67, 118, 0.8)),  url("img/hero-bg.jpg");
-  background-image: linear-gradient(to right, rgba(43, 88, 118, 0.8), rgba(78, 67, 118, 0.8)),  url("img/hero-bg.jpg");
+  background-image: -webkit-linear-gradient(left, rgba(43, 88, 118, 0.4), rgba(78, 67, 118, 0.8)),  url("img/hero-bg.jpg");
+  background-image: linear-gradient(to right, rgba(43, 88, 118, 0.4), rgba(78, 67, 118, 0.8)),  url("img/hero-bg.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -59,7 +59,6 @@ header {
   top: 0;
   left: 0;
 }
-
 
 nav {
   position: relative;
@@ -73,15 +72,132 @@ nav {
   float: left;
   margin-top: 26px;
   z-index: 100;
+  cursor: pointer;
+  -webkit-transition: all .35s;
+          transition: all .35s;
+
 }
 
-svg #triangle {
-  fill: #E6B526;
-}
-
-svg #letter {
+#letter {
   fill: #FFF;
+  stroke: #FFF;
+  stroke-width: 2px;
 }
+
+#triangle {
+  fill: #E6B526;
+  stroke: #E6B526;
+  stroke-width: 2px;
+}
+
+.logo:hover  #letter {
+  fill: #FFF;
+  stroke: #FFF;
+  stroke-width: 2px;
+  stroke-dasharray: 330;
+  stroke-dashoffset: 330;
+  -webkit-animation: 2s letter-outline forwards;
+          animation: 2s letter-outline  forwards;
+
+}
+
+ .logo:hover #triangle {
+  opacity: 0;
+  fill: #E6B526;
+  stroke: #E6B526;
+  stroke-width: 2px;
+  stroke-dasharray: 110;
+  stroke-dashoffset: 110;
+  -webkit-animation: 1s triangle-outline 1s ease-in forwards;
+          animation: 1s triangle-outline 1s ease-in forwards;
+}
+
+/* LOGO SVG ANIMATIONS */
+
+@-webkit-keyframes letter-outline {
+   0% {
+    stroke-dashoffset: 330;
+    fill-opacity: .25;
+  }
+  25% {
+    stroke-dashoffset:0;
+    fill-opacity: .25;
+  }
+  50% {
+    stroke-dashoffset:0;
+    fill-opacity: .75;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+  }
+}
+
+@keyframes letter-outline {
+  0% {
+   stroke-dashoffset: 330;
+   fill-opacity: 0;
+ }
+ 25% {
+   stroke-dashoffset:0;
+   fill-opacity: .25;
+ }
+ 50% {
+   stroke-dashoffset:0;
+   fill-opacity: .75;
+ }
+ 100% {
+   stroke-dashoffset: 0;
+   fill-opacity: 1;
+ }
+}
+
+/*@-webkit-keyframes triangle-outline {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 110;
+    fill-opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    stroke-dashoffset:0;
+    fill-opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    stroke-dashoffset:0;
+    fill-opacity: 0;
+  }
+  100% {
+   fill-opacity: 1;
+   opacity: 1;
+   stroke-dashoffset: 0;
+  }
+}*/
+
+@keyframes triangle-outline {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 110;
+    fill-opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    stroke-dashoffset:0;
+    fill-opacity: .25;
+  }
+  50% {
+    opacity: 1;
+    stroke-dashoffset:0;
+    fill-opacity: .75;
+  }
+  100% {
+   fill-opacity: 1;
+   opacity: 1;
+   stroke-dashoffset: 0;
+  }
+}
+
 
 /********* BUTTON NAV NOT ATCTIVE CLASS APPLIED **********/
 
@@ -93,6 +209,7 @@ svg #letter {
   height: 27px;
   cursor: pointer;
   z-index: 100;
+  -webkit-transition: all .25s ease;
   transition: all .25s ease;
 
 }
@@ -104,6 +221,7 @@ svg #letter {
   width: 100%;
   display: inline-block;
   -webkit-transition: all .35s ease;
+  -webkit-transition: all .25s ease;
   transition: all .25s ease;
 }
 
@@ -113,7 +231,8 @@ svg #letter {
 
 .menu_button_container span:nth-of-type(2) {
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .menu_button_container span:nth-of-type(3) {
@@ -143,9 +262,8 @@ svg #letter {
 }
 
 .menu_button_container.active:hover {
-  -webkit-transform-origin: center center;transform-origin: center center;
-  -webkit-transform: rotate(36deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 /********* Making The X **********/
@@ -173,8 +291,8 @@ svg #letter {
 
 .menu-overlay {
   position: fixed;
-  background-image: -webkit-linear-gradient(right, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98));
-  background-image: linear-gradient(to left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98));
+  background-image: -webkit-linear-gradient(right, rgba(43, 88, 118, 0.4), rgba(78, 67, 118, 0.98));
+  background-image: linear-gradient(to left, rgba(43, 88, 118, 0.4), rgba(78, 67, 118, 0.98));
   top: 0;
   left: 0;
   width: 100%;
@@ -182,6 +300,7 @@ svg #letter {
   opacity: 0; /* initial state*/
   visibility: hidden; /* initial state*/
   -webkit-transition: opacity .35s, visibility .35s, height .35s;
+  -webkit-transition: opacity .35s, visibility .35, height .35s;
   transition: opacity .35s, visibility .35, height .35s;
 }
 
@@ -216,6 +335,7 @@ svg #letter {
   text-decoration: none;
   letter-spacing: inherit;
   -webkit-transition: color 1s ease;
+  -webkit-transition: color .25s ease, text-decoration .25s ease, letter-spacing .25s ease;
   transition: color .25s ease, text-decoration .25s ease, letter-spacing .25s ease;
 }
 
@@ -266,7 +386,6 @@ svg #letter {
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
 @keyframes blink{
@@ -275,11 +394,6 @@ svg #letter {
     100% { opacity:1; }
 }
 @-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
@@ -322,13 +436,13 @@ svg #letter {
 
 .hero-text-box span {
   color: #fff;
-  font-size: 2.4em;
+  font-size: 2.5em;
   letter-spacing: 2px;
   line-height: 100%;
   font-family: 'Archivo Black', 'Helvetica', 'Arial', sans-serif;
   color: #E6B526;
   text-transform: uppercase;
   position: relative;
-  left: 74px;
+  /*left: 74px;*/
 
 }

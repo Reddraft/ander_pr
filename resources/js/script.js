@@ -16,11 +16,10 @@ $(document).ready(function() {
 
   $(function(){
     $(".hero-text-box span").typed({
-        strings: [ " ^1000 creatives", "organizers", "doers", "idea makers"],
+        strings: [ " ^1000 creatives", "organizers", "strategists", "idea makers"],
         typeSpeed: 90,
-        loop: true
+        loop: false
     });
   });
-
 
 });
