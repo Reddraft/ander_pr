@@ -1,0 +1,46 @@
+
+/************************
+** BASE STYLES **
+************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #3F4E79;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  /*-webkit-font-smoothing: antialiased;*/
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/************************
+** REUSABLE COMPONENTS **
+************************/
+
+/****** LAYOUT STYLES ******/
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/****** TYPOGRAPHY STYLES ******/
+
+h1 {
+  color: #fff;
+  font-family: 'Tenor Sans', 'Helvetica', 'Arial', sans-serif;
+  font-size: 2.1em;
+  font-weight: 400;
+}
