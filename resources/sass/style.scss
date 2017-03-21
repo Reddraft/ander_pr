@@ -1,14 +1,11 @@
-// 0-PLUGINS
-@import "0-plugins/plugins-dir";
+//PLUGINS
+@import "plugins/plugins-dir";
 
+//MODULES
+@import "modules/modules-dir";
 
-//1-BASE
-@import "1-base/base-dir";
+//BASE
+@import "base/base-dir";
 
-
-// 2-SECTIONS
-@import "2-sections/sections-dir";
-
-
-//3-MODULES
-@import "3-modules/modules-dir";
+//SECTIONS
+@import "sections/sections-dir";

@@ -1,0 +1,99 @@
+// ***************
+// * ANIMATIONS *
+// ***************
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+      @content;
+  }
+  @keyframes #{$animation-name} {
+      @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+          animation: #{$str};
+}
+
+
+/*** Logo SVV Animations ***/
+
+@include keyframes(letter-outline) {
+  0% {
+   stroke-dashoffset: 330;
+   fill-opacity: .25;
+ }
+ 25% {
+   stroke-dashoffset:0;
+   fill-opacity: .25;
+ }
+ 50% {
+   stroke-dashoffset:0;
+   fill-opacity: .75;
+ }
+ 100% {
+   stroke-dashoffset: 0;
+   fill-opacity: 1;
+ }
+}
+
+@include keyframes(triangle-outline) {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 110;
+    fill-opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    stroke-dashoffset:0;
+    fill-opacity: .25;
+  }
+  50% {
+    opacity: 1;
+    stroke-dashoffset:0;
+    fill-opacity: .75;
+  }
+  100% {
+   fill-opacity: 1;
+   opacity: 1;
+   stroke-dashoffset: 0;
+  }
+}
+
+
+/*** Menu Navigation Entrance Animation ***/
+
+@include keyframes(fadeInRight ) {
+  0% {
+    opacity: 0;
+    left: 50%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+
+/*** Blinking cursor typewritter Animation ***/
+@include keyframes(blink) {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+
+// ***************
+// * GRADIENTS *
+// ***************
+
+@mixin linear-gradient-image($direction, $stop-1, $stop2, $image) {
+ background-image: -webkit-linear-gradient($direction, $stop-1, $stop2), $image;
+ background-image: linear-gradient($direction, $stop-1, $stop2), $image;
+}
+
+@mixin linear-gradient-simple($args...) {
+ background-image: -webkit-linear-gradient($args);
+ background-image: linear-gradient($args);
+}
