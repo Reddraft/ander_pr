@@ -1,4 +1,4 @@
-/*** Logo SVV Animations ***/
+/*** Logo SVG Animations ***/
 @-webkit-keyframes letter-outline {
   0% {
     stroke-dashoffset: 330;
@@ -59,6 +59,35 @@
     fill-opacity: 1;
     opacity: 1;
     stroke-dashoffset: 0; } }
+/*** About Section icons animation**/
+@-webkit-keyframes icons-about-outline-normal {
+  from {
+    stroke-dashoffset: 1247;
+    stroke: #4d4276; }
+  to {
+    stroke-dashoffset: 0;
+    stroke: #ff738d; } }
+@keyframes icons-about-outline-normal {
+  from {
+    stroke-dashoffset: 1247;
+    stroke: #4d4276; }
+  to {
+    stroke-dashoffset: 0;
+    stroke: #ff738d; } }
+@-webkit-keyframes icons-about-outline-hover {
+  from {
+    stroke-dashoffset: 1247;
+    stroke: #ff738d; }
+  to {
+    stroke-dashoffset: 0;
+    stroke: #4d4276; } }
+@keyframes icons-about-outline-hover {
+  from {
+    stroke-dashoffset: 1247;
+    stroke: #ff738d; }
+  to {
+    stroke-dashoffset: 0;
+    stroke: #4d4276; } }
 /*** Menu Navigation Entrance Animation ***/
 @-webkit-keyframes fadeInRight {
   0% {
@@ -74,7 +103,7 @@
   100% {
     opacity: 1;
     left: 0; } }
-/*** Blinking cursor typewritter Animation ***/
+/*** Blinking Cursor Typewritter Animation ***/
 @-webkit-keyframes blink {
   0% {
     opacity: 1; }
@@ -123,18 +152,21 @@ html {
   max-width: 1200px;
   margin: 0 auto; }
 
+section, footer {
+  padding: 80px 0; }
+
 /************************
 ** HEADER SECTION **
 ************************/
 header {
-  background-image: -webkit-linear-gradient(left, rgba(43, 88, 118, 0.4), rgba(78, 67, 118, 0.8)), url("img/hero-bg.jpg");
-  background-image: linear-gradient(left, rgba(43, 88, 118, 0.4), rgba(78, 67, 118, 0.8)), url("img/hero-bg.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  background-image: -webkit-linear-gradient(left, rgba(43, 88, 118, 0.4), rgba(78, 67, 118, 0.8)), url("img/hero-bg.jpg");
+  background-image: linear-gradient(left, rgba(43, 88, 118, 0.4), rgba(78, 67, 118, 0.8)), url("img/hero-bg.jpg"); }
 
 nav {
   position: relative;
@@ -239,8 +271,6 @@ nav {
 /********** When The Navigation Is closed ***********/
 .menu-overlay {
   position: fixed;
-  background-image: -webkit-linear-gradient(left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98));
-  background-image: linear-gradient(left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98));
   top: 0;
   left: 0;
   width: 100%;
@@ -252,14 +282,16 @@ nav {
   /* initial state*/
   -webkit-transition: opacity .35s, visibility .35s, height .35s;
   -webkit-transition: opacity .35s, visibility .35, height .35s;
-  transition: opacity .35s, visibility .35, height .35s; }
+  transition: opacity .35s, visibility .35, height .35s;
+  background-image: -webkit-linear-gradient(left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98));
+  background-image: linear-gradient(left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98)); }
   .menu-overlay .main-nav {
     position: relative;
     top: 50%;
     height: 70%;
+    text-align: center;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-align: center; }
+    transform: translateY(-50%); }
   .menu-overlay ul {
     list-style: none;
     height: 100%; }
@@ -280,8 +312,7 @@ nav {
     -webkit-transition: color 1s ease;
     -webkit-transition: color .25s ease, text-decoration .25s ease, letter-spacing .25s ease;
     transition: color .25s ease, text-decoration .25s ease, letter-spacing .25s ease; }
-  .menu-overlay ul li a:hover,
-  .menu-overlay ul li a:active {
+  .menu-overlay ul li a:hover, .menu-overlay ul li a:active {
     color: #E6B526;
     letter-spacing: 3px; }
 
@@ -326,12 +357,75 @@ nav {
   -webkit-transform: translate(-50%, -50%); }
   .hero-text-box span {
     color: #FFF;
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 2px;
     line-height: 100%;
     font-family: "Archivo Black", "Helvetica", "Arial", sans-serif;
     color: #E6B526;
     text-transform: uppercase;
     position: relative; }
+
+.section-about {
+  height: 100vh;
+  position: relative;
+  padding-bottom: 0; }
+  .section-about .description-wrapper {
+    min-height: calc(75vh - 80px); }
+    .section-about .description-wrapper .left-box {
+      padding: 35px 35px 35px 0; }
+      .section-about .description-wrapper .left-box h2 {
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 80px; }
+        .section-about .description-wrapper .left-box h2::after {
+          display: block;
+          content: "";
+          height: 8px;
+          background-color: #ff738d;
+          width: 50%;
+          margin: 40px 35px 40px 0;
+          position: absolute;
+          right: 50%; }
+        .section-about .description-wrapper .left-box h2 span {
+          font-weight: 600; }
+      .section-about .description-wrapper .left-box h3 {
+        line-height: 150%;
+        font-weight: 400; }
+        .section-about .description-wrapper .left-box h3 span {
+          font-weight: 700; }
+    .section-about .description-wrapper .right-box {
+      padding: 35px 0 35px 35px; }
+      .section-about .description-wrapper .right-box p {
+        line-height: 150%; }
+        .section-about .description-wrapper .right-box p:first-child {
+          margin-bottom: 40px; }
+  .section-about .expertises-wrapper {
+    height: 25vh;
+    background-color: #f1f1f1; }
+    .section-about .expertises-wrapper .expertises {
+      height: 100%; }
+      .section-about .expertises-wrapper .expertises .expertise-box {
+        position: relative;
+        text-align: center;
+        top: 50%;
+        margin-top: 0;
+        transform: translateY(-50%); }
+        .section-about .expertises-wrapper .expertises .expertise-box .icon {
+          width: 57px;
+          margin: 0 auto;
+          height: auto;
+          margin-bottom: 5px; }
+          .section-about .expertises-wrapper .expertises .expertise-box .icon path {
+            margin-bottom: 10px;
+            stroke-dasharray: 1247;
+            -webkit-animation: icons-about-outline-normal 2s ease-in-out forwards;
+            animation: icons-about-outline-normal 2s ease-in-out forwards; }
+          .section-about .expertises-wrapper .expertises .expertise-box .icon:hover path {
+            -webkit-animation: icons-about-outline-hover 4s ease-in-out forwards;
+            animation: icons-about-outline-hover 4s ease-in-out forwards; }
+        .section-about .expertises-wrapper .expertises .expertise-box h4 {
+          font-size: 0.8rem;
+          font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */

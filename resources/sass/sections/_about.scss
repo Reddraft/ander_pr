@@ -1,0 +1,97 @@
+.section-about {
+  height: 100vh;
+  position: relative;
+  padding-bottom: 0;
+
+  .description-wrapper {
+    min-height: calc(75vh - 80px);
+
+    .left-box {
+      padding: 35px 35px 35px 0;
+
+      h2 {
+        font-size: $h2-font-size;
+        font-weight: $font-body-normal;
+        line-height: 1;
+        margin-bottom: 80px;
+
+        &::after {
+          display: block;
+          content: "";
+          height: 8px;
+          background-color: $pink-colour;
+          width: 50%;
+          margin: 40px 35px 40px 0;
+          position: absolute;
+          right: 50%;
+        }
+
+        span {
+          font-weight: $font-body-semibold;
+        }
+      }
+
+      h3 {
+        line-height: 150%;
+        font-weight: $font-body-normal;
+
+        span {
+          font-weight: $font-body-bold;
+        }
+      }
+
+    }
+
+    .right-box {
+      padding: 35px 0 35px 35px;
+
+      p {
+        line-height: 150%;
+
+        &:first-child {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+  }
+
+  .expertises-wrapper {
+    height: 25vh;
+    background-color: $light-gray-colour;
+
+    .expertises {
+      height: 100%;
+
+      .expertise-box {
+        position: relative;
+        text-align: center;
+        top: 50%;
+        margin-top: 0;
+        transform: translateY(-50%);
+
+        .icon {
+          width: 57px;
+          margin: 0 auto;
+          height: auto;
+          margin-bottom: 5px;
+
+          path {
+            margin-bottom: 10px;
+            stroke-dasharray: 1247;
+            @include animation('icons-about-outline-normal 2s ease-in-out forwards');
+          }
+
+          &:hover path {
+            @include animation('icons-about-outline-hover 4s ease-in-out forwards');
+          }
+        }
+
+        h4 {
+          font-size: $h4-font-size;
+          font-weight: $font-body-normal;
+        }
+      }
+    }
+  }
+}

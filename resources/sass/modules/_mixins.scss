@@ -17,7 +17,7 @@
 }
 
 
-/*** Logo SVV Animations ***/
+/*** Logo SVG Animations ***/
 
 @include keyframes(letter-outline) {
   0% {
@@ -61,6 +61,32 @@
   }
 }
 
+/*** About Section icons animation**/
+
+@include keyframes(icons-about-outline-normal) {
+  from {
+    stroke-dashoffset: 1247;
+    stroke: $purple-colour;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke: $pink-colour;
+  }
+}
+
+@include keyframes(icons-about-outline-hover) {
+  from {
+    stroke-dashoffset: 1247;
+    stroke: $pink-colour;
+  }
+  to {
+   stroke-dashoffset: 0;
+   stroke: $purple-colour;
+  }
+}
+
+
+
 
 /*** Menu Navigation Entrance Animation ***/
 
@@ -76,7 +102,7 @@
 }
 
 
-/*** Blinking cursor typewritter Animation ***/
+/*** Blinking Cursor Typewritter Animation ***/
 @include keyframes(blink) {
   0% { opacity:1; }
   50% { opacity:0; }

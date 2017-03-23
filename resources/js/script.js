@@ -9,6 +9,11 @@ $(document).ready(function() {
     $('#menu-overlay').toggleClass('open');
   });
 
+  $('.main-nav li a').click(function() {
+    $('#toggle').toggleClass('active');
+    $('#menu-overlay').toggleClass('open');
+  });
+
 
   /*******************************
   **** TYPED JS ****

@@ -5,13 +5,13 @@
 ************************/
 
 header {
-  @include linear-gradient-image(left, rgba(43, 88, 118, 0.4), rgba(78, 67, 118, 0.8), url("img/hero-bg.jpg"));
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   top: 0;
   left: 0;
+  @include linear-gradient-image(left, rgba(43, 88, 118, 0.4), rgba(78, 67, 118, 0.8), url("img/hero-bg.jpg"));
 }
 
 nav {
@@ -160,7 +160,6 @@ nav {
 
 .menu-overlay {
   position: fixed;
-  @include linear-gradient-simple(left, rgba(43, 88, 118, .98), rgba(78, 67, 118, .98));
   top: 0;
   left: 0;
   width: 100%;
@@ -170,14 +169,16 @@ nav {
   -webkit-transition: opacity .35s, visibility .35s, height .35s;
   -webkit-transition: opacity .35s, visibility .35, height .35s;
   transition: opacity .35s, visibility .35, height .35s;
+  @include linear-gradient-simple(left, rgba(43, 88, 118, .98), rgba(78, 67, 118, .98));
 
   .main-nav {
     position: relative;
     top: 50%;
     height: 70%;
+    text-align: center;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    text-align: center;
+
   }
 
   ul {
@@ -206,10 +207,13 @@ nav {
     transition: color .25s ease, text-decoration .25s ease, letter-spacing .25s ease;
   }
 
-  ul li a:hover,
-  ul li a:active {
-    color: $yellow-colour;
-    letter-spacing: 3px;
+
+  ul li a {
+    &:hover,
+    &:active {
+      color: $yellow-colour;
+      letter-spacing: 3px;
+    }
   }
 
 
