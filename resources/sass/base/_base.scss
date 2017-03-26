@@ -18,6 +18,10 @@ html {
   /*-webkit-font-smoothing: antialiased;*/
 }
 
+html, body {
+  height: 100%;
+}
+
 .clearfix::after {
     content: "";
     clear: both;

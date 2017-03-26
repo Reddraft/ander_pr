@@ -1,10 +1,8 @@
 .section-about {
-  height: 100vh;
-  position: relative;
-  padding-bottom: 0;
+  padding: 0;
 
   .description-wrapper {
-    min-height: calc(75vh - 80px);
+    padding: 40px 0 10px 0;
 
     .left-box {
       padding: 35px 35px 35px 0;
@@ -57,7 +55,6 @@
   }
 
   .expertises-wrapper {
-    height: 25vh;
     background-color: $light-gray-colour;
 
     .expertises {
@@ -66,9 +63,7 @@
       .expertise-box {
         position: relative;
         text-align: center;
-        top: 50%;
-        margin-top: 0;
-        transform: translateY(-50%);
+        padding: 30px 0;
 
         .icon {
           width: 57px;

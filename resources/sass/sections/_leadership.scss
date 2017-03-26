@@ -1,0 +1,120 @@
+.leadership-section {
+  padding: 0;
+}
+
+.founder-box {
+  width: 50%;
+  float: left;
+  margin: 0;
+}
+
+.founder-box:first-child {
+  position: relative;
+  text-align: left;
+}
+
+.founder-box:first-child figure.founder-photo {
+  background-color: $yellow-colour;
+}
+
+.founder-box:last-child {
+  position: relative;
+  text-align: right;
+}
+
+.founder-box:last-child figure.founder-photo {
+    background-color: $purple-colour;
+}
+
+figure.founder-photo {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+figure.founder-photo img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transform: scale(1);
+  transition: all .25s ease-out;
+}
+
+figure.founder-photo figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 6em;
+  transform: translateY(20%);
+  transition: transform .25s ;
+}
+
+figure.founder-photo:hover figcaption {
+  transform: translateY(0);
+  left: 0;
+}
+
+figure.founder-photo:hover img {
+  opacity: .1;
+  transform: scale(1.2);
+}
+
+figure.founder-photo:hover h3::after {
+  width: 100%;
+}
+
+figure.founder-photo:hover h4,
+figure.founder-photo:hover p {
+  opacity: 1;
+  transition: opacity .25s ease-out .25s;
+}
+
+.founder-bio {
+  height: 100%;
+  position: relative;
+}
+
+.founder-bio h3 {
+  font-size: $h3-font-size;
+  color: $white-colour;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.founder-box  h3::after {
+  display: block;
+  content: "";
+  height: 5px;
+  background-color: #FFF;
+  width: 15%;
+  margin-top: 10px;
+  position: absolute;
+  transition: width .25s ease-out;
+}
+
+.founder-box:first-child  h3::after {
+  left: 0;
+}
+.founder-box:last-child  h3::after {
+  right: 0;
+}
+
+.founder-bio h4 {
+  font-size: calc( #{$h4-font-size } + 10% );
+  color: $white-colour;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.founder-bio p {
+  font-size: $base-font-size;
+  color: $white-colour;
+  line-height: 150%;
+  text-align: justify;
+}
+
+.founder-bio p, .founder-bio h4 {
+  opacity: 0;
+}
