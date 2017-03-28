@@ -15,7 +15,7 @@ html {
   font-size: 20px;
   font-weight: $font-body;
   text-rendering: optimizeLegibility;
-  /*-webkit-font-smoothing: antialiased;*/
+  -webkit-font-smoothing: antialiased;
 }
 
 html, body {
@@ -36,7 +36,7 @@ html, body {
 /****** LAYOUT STYLES ******/
 
 .row {
-  max-width: 1200px;
+  width: 90%;
   margin: 0 auto;
 }
 

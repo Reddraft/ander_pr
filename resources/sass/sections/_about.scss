@@ -1,3 +1,7 @@
+
+/************************
+** ABOUT SECTION **
+************************/
 .section-about {
   padding: 0;
 
@@ -5,7 +9,8 @@
     padding: 40px 0 10px 0;
 
     .left-box {
-      padding: 35px 35px 35px 0;
+      padding: 2% 1% 2% 5%;
+      position: relative;
 
       h2 {
         font-size: $h2-font-size;
@@ -17,11 +22,11 @@
           display: block;
           content: "";
           height: 8px;
-          background-color: $pink-colour;
-          width: 50%;
+          background-color: #ff738d;
+          width: 100%;
           margin: 40px 35px 40px 0;
           position: absolute;
-          right: 50%;
+          right: 6%;
         }
 
         span {
@@ -32,6 +37,7 @@
       h3 {
         line-height: 150%;
         font-weight: $font-body-normal;
+        width: 87%;
 
         span {
           font-weight: $font-body-bold;
@@ -41,7 +47,7 @@
     }
 
     .right-box {
-      padding: 35px 0 35px 35px;
+      padding: 2% 5% 2% 1%;
 
       p {
         line-height: 150%;
@@ -78,7 +84,7 @@
           }
 
           &:hover path {
-            @include animation('icons-about-outline-hover 4s ease-in-out forwards');
+            @include animation('icons-about-outline-hover 2s ease-in-out forwards');
           }
         }
 
