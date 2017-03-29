@@ -136,8 +136,7 @@ html {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-size: 20px;
   font-weight: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased; }
+  text-rendering: optimizeLegibility; }
 
 html, body {
   height: 100%; }
@@ -428,7 +427,7 @@ nav {
             -webkit-animation: icons-about-outline-hover 2s ease-in-out forwards;
             animation: icons-about-outline-hover 2s ease-in-out forwards; }
         .section-about .expertises-wrapper .expertises .expertise-box h4 {
-          font-size: 1rem;
+          font-size: 1.1rem;
           font-weight: 400; }
 
 /************************
@@ -500,7 +499,7 @@ figure.founder-photo:hover p {
   position: relative; }
 
 .founder-bio h3 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: #FFF;
   text-transform: uppercase;
   margin-bottom: 50px; }
@@ -522,7 +521,7 @@ figure.founder-photo:hover p {
   right: 0; }
 
 .founder-bio h4 {
-  font-size: calc( 1rem + 10% );
+  font-size: calc( 1.1rem + 10% );
   color: #FFF;
   text-transform: uppercase;
   margin-bottom: 10px; }
@@ -645,5 +644,117 @@ ul.right-side li p {
   margin: 0 auto;
   opacity: 0;
   transition: opacity .35s, top .35s; }
+
+/************************
+** INDUSTRIES SECTION **
+************************/
+.indutries-section {
+  padding: 0;
+  height: 64vw;
+  background-image: -webkit-linear-gradient(left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98));
+  background-image: linear-gradient(left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98));
+  padding-top: 4vw;
+  text-align: center;
+  position: relative;
+  background-size: 100vw 39vw;
+  background-repeat: no-repeat; }
+  .indutries-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #FFF;
+    display: inline-block; }
+    .indutries-section h2::after {
+      display: block;
+      content: "";
+      height: 8px;
+      background-color: #E6B526;
+      width: 100%;
+      margin-top: 2vw; }
+
+.wrapper {
+  position: absolute;
+  width: 62vw;
+  top: 61%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+ul.industries {
+  list-style: none; }
+
+ul.industries li {
+  display: block;
+  float: left;
+  width: 50%;
+  margin: -2px; }
+
+ul.industries .industry-photo {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  -webkit-transition: background .35s;
+  transition: background .35s; }
+
+ul.industries .industry-photo img {
+  max-width: 100%;
+  display: block;
+  opacity: 0.6;
+  -webkit-transition: opacity .35s;
+  transition: opacity .35s;
+  -webkit-transform: translateZ(0) scale(1.2);
+  transform: translateZ(0) scale(1.2);
+  -webkit-backface-visibility: hidden; }
+
+ul.industries .industry-photo figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #FFF; }
+
+ul.industries .industry-photo h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  width: 80%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transition: all .35s;
+  transition: all .35s; }
+
+ul.industries .industry-photo p {
+  position: absolute;
+  font-size: .9rem;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  -webkit-transition: all .35s;
+  transition: all .35s; }
+
+ul.industries .industry-photo:hover {
+  background-color: #E6B526; }
+  ul.industries .industry-photo:hover img {
+    opacity: 0.1; }
+  ul.industries .industry-photo:hover h3 {
+    top: 30%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0); }
+  ul.industries .industry-photo:hover p {
+    top: 40%;
+    opacity: 1;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0); }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,132 @@
+/************************
+** INDUSTRIES SECTION **
+************************/
+
+.indutries-section {
+  padding: 0;
+  height: 64vw;
+  @include linear-gradient-simple(left, rgba(43, 88, 118, .98), rgba(78, 67, 118, .98));
+  padding-top: 4vw;
+  text-align: center;
+  position: relative;
+  background-size: 100vw 39vw;
+  background-repeat: no-repeat;
+
+    h2 {
+      font-size: $h2-font-size;
+      font-weight: $font-body-bold;
+      line-height: 1;
+      color: $white-colour;
+      display: inline-block;
+
+      &::after {
+        display: block;
+        content: "";
+        height: 8px;
+        background-color: $yellow-colour;
+        width: 100%;
+        margin-top: 2vw;
+      }
+    }
+  }
+
+    .wrapper {
+      position: absolute;
+      width: 62vw;
+      top: 61%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+    }
+
+    ul.industries {
+      list-style: none;
+    }
+
+    ul.industries li {
+      display: block;
+      float:left;
+      width: 50%;
+      margin: -2px;
+    }
+
+    ul.industries .industry-photo {
+      position: relative;
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      background-color: #000;
+      -webkit-transition: background .35s;
+              transition: background .35s;
+    }
+
+    ul.industries .industry-photo img {
+      max-width: 100%;
+      display: block;
+      opacity: 0.6;
+      -webkit-transition: opacity .35s;
+              transition: opacity .35s;
+      -webkit-transform: translateZ(0) scale(1.2);
+              transform: translateZ(0) scale(1.2);
+              -webkit-backface-visibility: hidden;
+    }
+
+    ul.industries .industry-photo figcaption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: $white-colour;
+    }
+
+    ul.industries .industry-photo h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: $h3-font-size;
+      text-transform: uppercase;
+      width: 80%;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-transform: translate3d(-50%, -50%, 0);
+              transform: translate3d(-50%, -50%, 0);
+      -webkit-transition: all .35s;
+              transition: all .35s;
+
+    }
+
+    ul.industries .industry-photo p {
+      position: absolute;
+      font-size: .9rem;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      opacity: 0;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translate3d(-50%, 0, 0);
+              transform: translate3d(-50%, 0, 0);
+      -webkit-transition: all .35s;
+              transition: all .35s;
+    }
+
+
+    ul.industries .industry-photo:hover {
+      background-color: $yellow-colour;
+
+      img {
+        opacity: 0.1;
+      }
+
+      h3 {
+        top: 30%;
+        -webkit-transform: translate3d(-50%, -50%, 0);
+                transform: translate3d(-50%, -50%, 0);
+      }
+      p {
+        top: 40%;
+        opacity: 1;
+        -webkit-transform: translate3d(-50%, 0, 0);
+                transform: translate3d(-50%, 0, 0);
+      }
+    }
