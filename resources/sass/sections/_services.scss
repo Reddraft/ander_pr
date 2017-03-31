@@ -46,7 +46,7 @@
     position: relative;
     display: block;
     height: 100%;
-    font-size: $base-font-size;
+    font-size: $h4-font-size;
     line-height: 2.5rem;
     color: $purple-colour;
     text-decoration: none;
@@ -110,7 +110,7 @@
 
   .service-description li {
     color: $white-colour;
-    font-size: calc( #{$base-font-size} - 20% );
+    font-size: calc( #{$base-font-size} - 10% );
     margin-bottom: 20px;
     letter-spacing: 1px;
   }

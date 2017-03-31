@@ -125,7 +125,7 @@ h1 {
 
 h2 {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   color: #4d4276;
   font-weight: 700; }
 
@@ -675,7 +675,7 @@ ul.right-side li p {
   background-size: 100vw 39vw;
   background-repeat: no-repeat; }
   .indutries-section h2 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     font-weight: 700;
     line-height: 1;
     color: #FFF;
@@ -785,7 +785,7 @@ ul.industries .industry-photo:hover {
   height: 57vw;
   position: relative; }
   .services-section h2 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     line-height: 1;
     color: #4d4276;
     display: inline-block; }
@@ -811,7 +811,7 @@ ul.industries .industry-photo:hover {
     position: relative;
     display: block;
     height: 100%;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 2.5rem;
     color: #4d4276;
     text-decoration: none;
@@ -860,7 +860,7 @@ ul.industries .industry-photo:hover {
     list-style: none; }
   .services-section .service-description li {
     color: #FFF;
-    font-size: calc( 1rem - 20% );
+    font-size: calc( 1rem - 10% );
     margin-bottom: 20px;
     letter-spacing: 1px; }
   .services-section .service-description li::before {
@@ -871,5 +871,24 @@ ul.industries .industry-photo:hover {
     margin-right: 10px;
     vertical-align: top;
     line-height: 18px; }
+
+/************************
+** INDUSTRIES SECTION **
+************************/
+.contact-section {
+  height: 40vw;
+  position: relative;
+  padding: 0;
+  background-color: #f1f1f1; }
+  .contact-section .map {
+    width: 50vw;
+    height: 40vw; }
+  .contact-section .contact-us {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    width: 50vw;
+    height: inherit; }
 
 /*# sourceMappingURL=style.css.map */

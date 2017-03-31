@@ -1,0 +1,23 @@
+/************************
+** INDUSTRIES SECTION **
+************************/
+.contact-section {
+  height: 40vw;
+  position: relative;
+  padding: 0;
+  background-color: $light-gray-colour;
+
+  .map{
+    width: 50vw;
+    height: 40vw;
+  }
+
+  .contact-us {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    width: 50vw;
+    height: inherit;
+  }
+}
