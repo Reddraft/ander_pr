@@ -27,4 +27,21 @@ $(document).ready(function() {
     });
   });
 
+  /*******************************
+  **** SERVICES TABS ****
+  ********************************/
+  
+  $(".services-list li").removeClass("active");
+  $(".service-description").removeClass("active");
+  $(".services-list li:first-child").addClass("active");
+  $("div#id1").addClass("active");
+
+  $('.tab').click(function(e) {
+    var currentAttrValue = $(this).attr('href');
+    $(".services-list li").removeClass("active");
+    $(this).closest('li').addClass('active');
+    $(this).closest('section').find('div').removeClass('active');
+    $(this).closest('section').find('div' + currentAttrValue).addClass('active');
+  })
+
 });
