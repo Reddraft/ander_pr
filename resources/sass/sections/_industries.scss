@@ -47,7 +47,7 @@
       display: block;
       float:left;
       width: 50%;
-      margin: -2px;
+      margin: -1px;
     }
 
     ul.industries .industry-photo {
@@ -85,6 +85,7 @@
       top: 50%;
       left: 50%;
       font-size: $h3-font-size;
+      color: $white-colour;
       text-transform: uppercase;
       width: 80%;
       -webkit-backface-visibility: hidden;
@@ -99,6 +100,7 @@
     ul.industries .industry-photo p {
       position: absolute;
       font-size: .9rem;
+      color: $white-colour;
       top: 50%;
       left: 50%;
       width: 80%;

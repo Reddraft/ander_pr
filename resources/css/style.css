@@ -119,9 +119,30 @@
   100% {
     opacity: 1; } }
 h1 {
-  color: #FFF;
   font-family: "Tenor Sans", "Helvetica", "Arial", sans-serif;
-  font-size: 2.1rem; }
+  font-size: 2.1rem;
+  color: #FFF; }
+
+h2 {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 2.8rem;
+  color: #4d4276;
+  font-weight: 700; }
+
+h3 {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 1.3rem;
+  color: #4d4276; }
+
+h4 {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 1.1rem;
+  color: #4d4276; }
+
+p {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  color: #4d4276; }
 
 /************************
 ** BASE STYLES **
@@ -378,7 +399,6 @@ nav {
       padding: 2% 1% 2% 5%;
       position: relative; }
       .section-about .description-wrapper .left-box h2 {
-        font-size: 3rem;
         font-weight: 400;
         line-height: 1;
         margin-bottom: 80px; }
@@ -392,7 +412,7 @@ nav {
           position: absolute;
           right: 6%; }
         .section-about .description-wrapper .left-box h2 span {
-          font-weight: 600; }
+          font-weight: 700; }
       .section-about .description-wrapper .left-box h3 {
         line-height: 150%;
         font-weight: 400;
@@ -427,7 +447,6 @@ nav {
             -webkit-animation: icons-about-outline-hover 2s ease-in-out forwards;
             animation: icons-about-outline-hover 2s ease-in-out forwards; }
         .section-about .expertises-wrapper .expertises .expertise-box h4 {
-          font-size: 1.1rem;
           font-weight: 400; }
 
 /************************
@@ -499,7 +518,6 @@ figure.founder-photo:hover p {
   position: relative; }
 
 .founder-bio h3 {
-  font-size: 1.3rem;
   color: #FFF;
   text-transform: uppercase;
   margin-bottom: 50px; }
@@ -527,7 +545,6 @@ figure.founder-photo:hover p {
   margin-bottom: 10px; }
 
 .founder-bio p {
-  font-size: 20px;
   color: #FFF;
   line-height: 150%;
   text-align: justify; }
@@ -565,7 +582,6 @@ figure.founder-photo:hover p {
   text-align: justify; }
 
 .left-side .text-box h2 {
-  font-size: 3rem;
   font-weight: 400;
   line-height: 1;
   margin-bottom: 80px; }
@@ -579,7 +595,7 @@ figure.founder-photo:hover p {
     position: absolute;
     right: 6%; }
   .left-side .text-box h2 span {
-    font-weight: 600; }
+    font-weight: 700; }
 
 ul.right-side {
   list-style: none;
@@ -659,7 +675,7 @@ ul.right-side li p {
   background-size: 100vw 39vw;
   background-repeat: no-repeat; }
   .indutries-section h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     line-height: 1;
     color: #FFF;
@@ -687,7 +703,7 @@ ul.industries li {
   display: block;
   float: left;
   width: 50%;
-  margin: -2px; }
+  margin: -1px; }
 
 ul.industries .industry-photo {
   position: relative;
@@ -721,6 +737,7 @@ ul.industries .industry-photo h3 {
   top: 50%;
   left: 50%;
   font-size: 1.3rem;
+  color: #FFF;
   text-transform: uppercase;
   width: 80%;
   -webkit-backface-visibility: hidden;
@@ -733,6 +750,7 @@ ul.industries .industry-photo h3 {
 ul.industries .industry-photo p {
   position: absolute;
   font-size: .9rem;
+  color: #FFF;
   top: 50%;
   left: 50%;
   width: 80%;
@@ -756,5 +774,102 @@ ul.industries .industry-photo:hover {
     opacity: 1;
     -webkit-transform: translate3d(-50%, 0, 0);
     transform: translate3d(-50%, 0, 0); }
+
+/************************
+** INDUSTRIES SECTION **
+************************/
+.services-section {
+  padding: 0;
+  padding-top: 4vw;
+  text-align: center;
+  height: 57vw;
+  position: relative; }
+  .services-section h2 {
+    font-size: 2.8rem;
+    line-height: 1;
+    color: #4d4276;
+    display: inline-block; }
+    .services-section h2::after {
+      display: block;
+      content: "";
+      height: 8px;
+      background-color: #ff738d;
+      width: 100%;
+      margin-top: 2vw; }
+  .services-section ul.services-list,
+  .services-section .service-description {
+    position: absolute; }
+  .services-section ul.services-list {
+    list-style: none;
+    width: 37vw;
+    top: 21vw;
+    left: 14vw; }
+  .services-section ul.services-list li {
+    display: block;
+    height: 2.5rem; }
+  .services-section ul.services-list li a.tab {
+    position: relative;
+    display: block;
+    height: 100%;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: #4d4276;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px; }
+  .services-section ul.services-list li.active a.tab::before,
+  .services-section ul.services-list li:hover a.tab::before {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    content: url(../img/icons/right.svg);
+    width: 20px;
+    height: 20px;
+    transform: translate3d(0, -50%, 0);
+    display: block;
+    line-height: 100%; }
+  .services-section ul.services-list li a.tab:hover,
+  .services-section ul.services-list li.active a.tab {
+    color: #ff738d; }
+  .services-section ul.services-list li.active a.tab {
+    background-color: #f1f1f1; }
+  .services-section .service-description {
+    display: none;
+    width: 50vw;
+    top: 17vw;
+    left: 50vw;
+    height: 40vw;
+    text-align: left;
+    padding: 3rem 2rem 0 2rem;
+    background-image: -webkit-linear-gradient(left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98));
+    background-image: linear-gradient(left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98)); }
+  .services-section .service-description.active {
+    display: block; }
+  .services-section .service-description h3 {
+    color: #FFF;
+    display: inline-block;
+    border-bottom: 2px solid #E6B526;
+    padding-bottom: .5rem;
+    margin-bottom: 40px;
+    text-align: left;
+    text-transform: uppercase; }
+  .services-section .service-description ul {
+    list-style: none; }
+  .services-section .service-description li {
+    color: #FFF;
+    font-size: calc( 1rem - 20% );
+    margin-bottom: 20px;
+    letter-spacing: 1px; }
+  .services-section .service-description li::before {
+    content: "+";
+    color: #E6B526;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 10px;
+    vertical-align: top;
+    line-height: 18px; }
 
 /*# sourceMappingURL=style.css.map */

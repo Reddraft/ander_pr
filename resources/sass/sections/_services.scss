@@ -1,0 +1,128 @@
+/************************
+** INDUSTRIES SECTION **
+************************/
+.services-section {
+  padding: 0;
+  padding-top: 4vw;
+  text-align: center;
+  height: 57vw;
+  position: relative;
+
+  h2 {
+    font-size: $h2-font-size;
+    line-height: 1;
+    color: $purple-colour;
+    display: inline-block;
+
+    &::after {
+      display: block;
+      content: "";
+      height: 8px;
+      background-color: $pink-colour;
+      width: 100%;
+      margin-top: 2vw;
+    }
+  }
+
+  ul.services-list,
+  .service-description {
+    position: absolute;
+  }
+
+  ul.services-list {
+    list-style: none;
+    width: 37vw;
+    top: 21vw;
+    left: 14vw;
+
+  }
+
+  ul.services-list li {
+    display: block;
+    height: 2.5rem;
+  }
+
+  ul.services-list li a.tab {
+    position: relative;
+    display: block;
+    height: 100%;
+    font-size: $base-font-size;
+    line-height: 2.5rem;
+    color: $purple-colour;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 2rem;
+    font-weight: $font-body-semibold;
+    letter-spacing: 1px;
+  }
+
+  ul.services-list li.active a.tab::before,
+  ul.services-list li:hover  a.tab::before {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    content: url(../img/icons/right.svg);
+    width: 20px;
+    height: 20px;
+    transform: translate3d(0, -50%, 0);
+    display: block;
+    line-height: 100%;
+  }
+
+  ul.services-list li a.tab:hover,
+  ul.services-list li.active a.tab {
+    color: $pink-colour;
+  }
+
+  ul.services-list li.active a.tab {
+    background-color: $light-gray-colour;
+  }
+
+  .service-description {
+    display: none;
+    width: 50vw;
+    top: 17vw;
+    left: 50vw;
+    height: 40vw;
+    text-align: left;
+    padding: 3rem 2rem 0 2rem;
+    @include linear-gradient-simple(left, rgba(43, 88, 118, .98), rgba(78, 67, 118, .98));
+  }
+
+  .service-description.active {
+    display: block;
+  }
+
+  .service-description h3 {
+    color: $white-colour;
+    display: inline-block;
+    border-bottom: 2px solid $yellow-colour;
+    padding-bottom: .5rem;
+    margin-bottom: 40px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .service-description ul {
+    list-style: none;
+  }
+
+  .service-description li {
+    color: $white-colour;
+    font-size: calc( #{$base-font-size} - 20% );
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  .service-description li::before {
+    content: "+";
+    color: $yellow-colour;
+    font-weight: $font-body-semibold;
+    font-size: $base-font-size;
+    margin-right: 10px;
+    vertical-align: top;
+    line-height: 18px;
+
+  }
+
+}

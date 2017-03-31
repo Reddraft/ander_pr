@@ -1,10 +1,36 @@
 // *****Typography
 
 h1 {
-  color: $white-colour;
   font-family: $font-accent;
   font-size: $h1-font-size;
+  color: $white-colour;
 }
+
+h2 {
+  font-family: $font-body;
+  font-size: $h2-font-size;
+  color: $purple-colour;
+  font-weight: $font-body-bold;
+}
+
+h3 {
+  font-family: $font-body;
+  font-size: $h3-font-size;
+  color: $purple-colour;
+}
+
+h4 {
+  font-family: $font-body;
+  font-size: $h4-font-size;
+  color: $purple-colour;
+}
+
+p {
+  font-family: $font-body;
+  font-size: $base-font-size;
+  color: $purple-colour;
+}
+
 
 
 // p {
