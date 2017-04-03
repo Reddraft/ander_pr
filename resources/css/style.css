@@ -945,4 +945,16 @@ ul.industries .industry-photo:hover {
     .contact-section .contact-us ul.social-links li i:hover {
       border: 2px solid #ff738d; }
 
+/************************
+** FOOTER SECTION **
+************************/
+footer {
+  background-image: -webkit-linear-gradient(left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98));
+  background-image: linear-gradient(left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98));
+  text-align: center;
+  padding: 40px; }
+  footer p {
+    color: #FFF;
+    font-size: .8rem; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+/************************
+** FOOTER SECTION **
+************************/
+
+footer {
+  @include linear-gradient-simple(left, rgba(43, 88, 118, .98), rgba(78, 67, 118, .98));
+  text-align: center;
+  padding: 40px;
+  p {
+    color: $white-colour;
+    font-size: .8rem;
+  }
+}
