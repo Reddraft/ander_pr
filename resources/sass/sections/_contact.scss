@@ -16,8 +16,92 @@
     position: absolute;
     top: 0;
     right: 0;
-    text-align: center;
     width: 50vw;
     height: inherit;
+    padding: 2rem 0;
+    text-align: center;
+
+    h2 {
+      color: $purple-colour;
+      display: inline-block;
+      margin-bottom: 2vw;
+
+      &::after {
+        display: block;
+        content: "";
+        height: 8px;
+        background-color: $pink-colour;
+        width: 100%;
+        margin-top: 2vw;
+      }
+    }
+
+    h3 {
+      font-family: "Tenor Sans", "Helvetica", "Arial", sans-serif;
+      margin-bottom: 3vw;
+
+      span {
+        color: $pink-colour;
+      }
+    }
+
+    a {
+      display: block;
+      font-size: .9rem;
+      text-transform: uppercase;
+      color: $pink-colour;
+      margin-bottom: 20px;
+      text-decoration: none;
+    }
+
+    a:last-of-type {
+      color: $purple-colour;
+    }
+
+    p {
+      font-size: .9rem;
+      margin-bottom: 3vw;
+    }
+
+    ul.social-links {
+      text-decoration: none;
+    }
+
+    ul.social-links li {
+      display: inline-block;
+      margin-right: 25px;
+    }
+    ul.social-links li:last-child {
+      display: inline-block;
+      margin-right: 0;
+    }
+
+    ul.social-links li a:link,
+    ul.social-links li a:visited {
+      color: $purple-colour;
+      -webkit-transition: color .5s;
+      transition: color .5s;
+    }
+
+    ul.social-links li a:hover,
+    ul.social-links li a:active {
+      color: $pink-colour;
+    }
+
+    ul.social-links li i {
+      width: 45px;
+      height: 45px;
+      border: 2px solid $purple-colour;
+      font-size: 1rem;
+      line-height: 100%;
+      vertical-align: middle;
+      display: table-cell;
+      transition: border .5s;
+    }
+
+    ul.social-links li i:hover {
+      border: 2px solid $pink-colour;
+    }
+
   }
 }

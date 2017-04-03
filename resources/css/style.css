@@ -785,8 +785,6 @@ ul.industries .industry-photo:hover {
   height: 57vw;
   position: relative; }
   .services-section h2 {
-    font-size: 2.7rem;
-    line-height: 1;
     color: #4d4276;
     display: inline-block; }
     .services-section h2::after {
@@ -887,8 +885,64 @@ ul.industries .industry-photo:hover {
     position: absolute;
     top: 0;
     right: 0;
-    text-align: center;
     width: 50vw;
-    height: inherit; }
+    height: inherit;
+    padding: 2rem 0;
+    text-align: center; }
+    .contact-section .contact-us h2 {
+      color: #4d4276;
+      display: inline-block;
+      margin-bottom: 2vw; }
+      .contact-section .contact-us h2::after {
+        display: block;
+        content: "";
+        height: 8px;
+        background-color: #ff738d;
+        width: 100%;
+        margin-top: 2vw; }
+    .contact-section .contact-us h3 {
+      font-family: "Tenor Sans", "Helvetica", "Arial", sans-serif;
+      margin-bottom: 3vw; }
+      .contact-section .contact-us h3 span {
+        color: #ff738d; }
+    .contact-section .contact-us a {
+      display: block;
+      font-size: .9rem;
+      text-transform: uppercase;
+      color: #ff738d;
+      margin-bottom: 20px;
+      text-decoration: none; }
+    .contact-section .contact-us a:last-of-type {
+      color: #4d4276; }
+    .contact-section .contact-us p {
+      font-size: .9rem;
+      margin-bottom: 3vw; }
+    .contact-section .contact-us ul.social-links {
+      text-decoration: none; }
+    .contact-section .contact-us ul.social-links li {
+      display: inline-block;
+      margin-right: 25px; }
+    .contact-section .contact-us ul.social-links li:last-child {
+      display: inline-block;
+      margin-right: 0; }
+    .contact-section .contact-us ul.social-links li a:link,
+    .contact-section .contact-us ul.social-links li a:visited {
+      color: #4d4276;
+      -webkit-transition: color .5s;
+      transition: color .5s; }
+    .contact-section .contact-us ul.social-links li a:hover,
+    .contact-section .contact-us ul.social-links li a:active {
+      color: #ff738d; }
+    .contact-section .contact-us ul.social-links li i {
+      width: 45px;
+      height: 45px;
+      border: 2px solid #4d4276;
+      font-size: 1rem;
+      line-height: 100%;
+      vertical-align: middle;
+      display: table-cell;
+      transition: border .5s; }
+    .contact-section .contact-us ul.social-links li i:hover {
+      border: 2px solid #ff738d; }
 
 /*# sourceMappingURL=style.css.map */
