@@ -116,7 +116,19 @@ nav {
   }
 }
 
+/********* STICKY NAV CLASS APPLIED **********/
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  @include linear-gradient-simple(left, rgba(43, 88, 118, .98), rgba(78, 67, 118, .98));
+  z-index: 30;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+  .logo{ margin: 20px 0; }
+}
 
 /********* BUTTON NAV ACTIVE CLASS APPLIED **********/
 

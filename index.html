@@ -15,19 +15,21 @@
 <body>
 
   <!-- HEADER SECTION -->
-  <header>
-    <nav>
+  <header id="top">
+    <nav >
       <div class="row">
 
         <!-- logo -->
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="21.9 357.2 83.3 78.7" class="logo">
-          <g id="letter" class="animated">
-            <path d="M55.9,357.7 55.3,358.5 73.7,403.1 36.4,403.1 22.7,435.5 39.9,435.5 47,418.2 79.6,418.2 86.6,435.5 104.4,435.5 71.5,357.7z" stroke-width="2" stroke="#FFF" stroke-linecap="round"/>
-          </g>
-          <g id="triangle" class="animated">
-            <path d="M52.9,364.5 38.3,398.5 66.7,398.5z"  stroke-width="2" stroke="#E6B526" stroke-linejoin="bevel" stroke-linecap="round" />
-          </g>
-        </svg>
+        <a href="#top">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="21.9 357.2 83.3 78.7" class="logo">
+            <g id="letter" class="animated">
+              <path d="M55.9,357.7 55.3,358.5 73.7,403.1 36.4,403.1 22.7,435.5 39.9,435.5 47,418.2 79.6,418.2 86.6,435.5 104.4,435.5 71.5,357.7z" stroke-width="2" stroke="#FFF" stroke-linecap="round"/>
+            </g>
+            <g id="triangle" class="animated">
+              <path d="M52.9,364.5 38.3,398.5 66.7,398.5z"  stroke-width="2" stroke="#E6B526" stroke-linejoin="bevel" stroke-linecap="round" />
+            </g>
+          </svg>
+        </a>
 
         <!-- menu button -->
         <div class="menu_button_container" id="toggle">
@@ -40,12 +42,12 @@
         <div class="menu-overlay" id="menu-overlay">
           <div class="main-nav">
             <ul>
-              <li><a href="#">About</a></li>
-              <li ><a href="#">Leadership</a></li>
-              <li><a href="#">The Difference</a></li>
-              <li><a href="#">Industries</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#about">About</a></li>
+              <li ><a href="#leadership">Leadership</a></li>
+              <li><a href="#difference">The Difference</a></li>
+              <li><a href="#industries">Industries</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -64,7 +66,7 @@
 
 
   <!-- ABOUT  SECTION -->
-  <section class="section-about">
+  <section class="section-about js-section-about" id="about">
 
     <!-- description part -->
     <div class="description-wrapper clearfix">
@@ -166,7 +168,7 @@
 
 
   <!-- LEADERSHIP  SECTION -->
-  <section class="leadership-section clearfix">
+  <section class="leadership-section clearfix" id="leadership">
 
     <div class="founder-box">
       <figure class="founder-photo">
@@ -201,7 +203,7 @@
   </section>
 
 
-  <section class="section-difference clearfix">
+  <section class="section-difference clearfix" id="difference">
 
       <!-- left side -->
       <div class="left-side">
@@ -271,7 +273,7 @@
 
   <!-- INDUSTRIES  SECTION -->
 
-  <section class="indutries-section">
+  <section class="indutries-section" id="industries">
 
     <div class="row">
       <h2>INDUSTRIES</h2>
@@ -327,8 +329,8 @@
   </section>
 
 
-  <!-- ABOUT SECTION -->
-  <section class="services-section clearfix">
+  <!-- SERVICES SECTION -->
+  <section class="services-section clearfix" id="services">
     <div class="row">
       <h2>SERVICES</h2>
     </div>
@@ -418,7 +420,7 @@
 
 
   <!-- CONTACT SECTION -->
-  <section class="contact-section">
+  <section class="contact-section" id="contact">
 
     <div class="map"></div>
 
@@ -455,6 +457,7 @@
   <!-- SCRIPTS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/23d82ae1a1.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
   <script src="vendors/js/gmaps.js"></script>
   <script src="vendors/js/typed.js"></script>
 

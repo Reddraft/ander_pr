@@ -15,6 +15,51 @@ $(document).ready(function() {
   });
 
 
+  /***********************
+  *** STICKY NAVIGATION **
+  ************************/
+  $('.js-section-about').waypoint(function(direction) {
+
+    if (direction === 'down') {
+      $('nav').fadeOut(function() {
+        $(this).addClass('sticky');
+      });
+      $('nav').fadeIn(200);
+    } else {
+      $('nav').fadeOut(200, function() {
+        $(this).removeClass('sticky');
+      });
+      $('nav').fadeIn();
+    }
+  }, {
+    offset: '100px;'
+  });
+
+
+
+  /**************************
+  *** SCROLL ON NAVIGATION **
+  **************************/
+  /* https://css-tricks.com/snippets/jquery/smooth-scrolling */
+
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            //substract 100 to anchor 100px from the top
+            scrollTop: target.offset().top - 99
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+
+
   /*******************************
   **** TYPED JS ****
   ********************************/
