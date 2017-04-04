@@ -37,7 +37,7 @@ $(document).ready(function() {
   $("div#id1").addClass("active");
 
   $('.tab').click(function(e) {
-    e.preventDefault();
+    // e.preventDefault();
     var currentAttrValue = $(this).attr('href');
     $(".services-list li").removeClass("active");
     $(this).closest('li').addClass('active');

@@ -957,4 +957,315 @@ footer {
     color: #FFF;
     font-size: .8rem; }
 
+/************************
+**    MEDIA QUERIES    **
+************************/
+/****************************
+        Max Width 1200px
+****************************/
+@media only screen and (max-width: 1200px) {
+  /* --- base ----*/
+  html {
+    font-size: 18px; }
+
+  /* --- header section ----*/
+  header .hero-text-box {
+    width: 90%; }
+
+  /* --- about section ----*/
+  .section-about h4 {
+    font-size: .9rem; } }
+/**** Max Width 1100px ****/
+@media only screen and (max-width: 1100px) {
+  /* --- leadership section ----*/
+  .leadership-section figure.founder-photo figcaption {
+    padding: 4rem; } }
+/****************************
+        Max Width 1024px
+****************************/
+@media only screen and (max-width: 1024px) {
+  /* --- base ----*/
+  .row {
+    width: 94%; }
+
+  /* --- about section ----*/
+  .section-about .description-wrapper .left-box {
+    padding: 2% 1% 2% 3%; }
+
+  .section-about .description-wrapper .right-box {
+    padding: 2% 3% 2% 1%;
+    text-align: justify; }
+
+  /* --- leadership section ----*/
+  .leadership-section figure.founder-photo figcaption {
+    padding: 3rem; }
+
+  /* --- difference section ----*/
+  .section-difference .left-side {
+    padding: 0 3%; }
+  .section-difference ul.right-side li:hover .value {
+    top: 63px; }
+  .section-difference ul.right-side li:hover h4 {
+    margin-top: -10px; }
+  .section-difference ul.right-side li:hover p {
+    top: 169px; }
+  .section-difference ul.right-side li p {
+    width: 90%; }
+
+  /* --- industries section ----*/
+  .indutries-section ul.industries .industry-photo:hover h3 {
+    top: 20%; }
+  .indutries-section ul.industries .industry-photo:hover h3 {
+    top: 30%; }
+  .indutries-section ul.industries .industry-photo h3,
+  .indutries-section ul.industries .industry-photo p {
+    width: 90%; }
+
+  /* --- contact section ----*/
+  .contact-section .contact-us h3 {
+    margin-bottom: 2vw; }
+  .contact-section .contact-us a {
+    margin-bottom: 15px; }
+  .contact-section .contact-us p {
+    margin-bottom: 2vw; }
+  .contact-section .contact-us ul.social-links li i {
+    width: 35px;
+    height: 35px; } }
+/****************************
+        Max Width 900px
+****************************/
+@media only screen and (max-width: 900px) {
+  /* --- header section ----*/
+  header h1 {
+    font-size: 1.8em; }
+  header .hero-text-box span {
+    font-size: 4.2rem; }
+
+  /* --- about section ----*/
+  .section-about .description-wrapper .left-box,
+  .section-about .description-wrapper .right-box {
+    width: 80%;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    padding: 2% 0; }
+  .section-about .description-wrapper .left-box h2 {
+    width: 80%;
+    margin-bottom: 30px;
+    display: inline-block; }
+  .section-about .description-wrapper .left-box h2::after {
+    width: 100%;
+    margin: 0;
+    margin-top: 2vw;
+    position: static; }
+  .section-about .description-wrapper .left-box h3 {
+    width: 100%;
+    margin: 0 auto; }
+
+  /* --- leadership section ----*/
+  .leadership-section .founder-box {
+    width: 100%;
+    float: none; }
+  .leadership-section figure.founder-photo {
+    height: 57vw; }
+  .leadership-section .founder-bio h3 {
+    font-size: 2rem; }
+  .leadership-section figure.founder-photo img {
+    transform: translateY(-64px); }
+  .leadership-section figure.founder-photo figcaption {
+    padding: 3rem; }
+
+  /* --- difference section ----*/
+  .section-difference {
+    height: 100vw;
+    width: 100vw; }
+    .section-difference .left-side, .section-difference .right-side {
+      width: 100vw; }
+    .section-difference .left-side {
+      height: 40vw; }
+    .section-difference .right-side {
+      height: 60vw; }
+    .section-difference .left-side .text-box {
+      text-align: center;
+      width: 80%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .section-difference .left-side .text-box h2 {
+      display: inline-block;
+      margin-bottom: 40px; }
+    .section-difference .left-side .text-box h2::after {
+      margin: 0;
+      position: static;
+      margin-top: 2vw; }
+    .section-difference .left-side .text-box p {
+      width: 100%;
+      text-align: center; }
+
+  /* --- industries section ----*/
+  .indutries-section {
+    height: 86vw;
+    background-size: 100vw 52.5vw; }
+    .indutries-section .wrapper {
+      width: 90vw;
+      top: 52.5vw; }
+
+  /* --- services section ----*/
+  .services-section {
+    height: 69vw; }
+    .services-section .service-description {
+      padding: 2rem 1rem 0 2rem;
+      top: 19vw;
+      height: 50vw; }
+    .services-section ul.services-list {
+      top: 23vw;
+      left: 8vw;
+      width: 42vw; }
+
+  /* --- contact section ----*/
+  .contact-section {
+    height: 100vw; }
+    .contact-section .map {
+      height: 45vw;
+      width: 100vw; }
+    .contact-section .contact-us {
+      position: static;
+      width: 100vw;
+      height: 0; }
+    .contact-section .contact-us p {
+      margin-bottom: 4vw; }
+    .contact-section .contact-us ul.social-links li i {
+      width: 45px;
+      height: 45px;
+      font-size: 1.2rem; } }
+/****************************
+        Max Width 767px
+****************************/
+@media only screen and (max-width: 767px) {
+  /* --- header section ----*/
+  header .hero-text-box h1 {
+    text-align: center;
+    font-size: 1.4rem; }
+  header .hero-text-box span {
+    font-size: 2.8rem; }
+  header .menu-overlay .main-nav {
+    top: 56%; }
+  header .menu-overlay ul li a {
+    font-size: 1.8rem; }
+
+  /* --- about section ----*/
+  .section-about .description-wrapper .left-box,
+  .section-about .description-wrapper .right-box {
+    width: 90%; }
+  .section-about .expertises-wrapper .expertises .expertise-box {
+    width: 100%;
+    padding: 30px 0 0 0;
+    margin: 0; }
+  .section-about .expertises-wrapper .expertises .expertise-box:last-child {
+    padding-bottom: 30px; }
+
+  /* --- leadership section ----*/
+  .leadership-section figure.founder-photo {
+    height: 78vw; }
+  .leadership-section figure.founder-photo img {
+    transform: translateY(-30px); }
+  .leadership-section figure.founder-photo figcaption {
+    padding: 1rem;
+    transform: translateY(10%);
+    transition: transform 0.25s; }
+  .leadership-section figure.founder-photo:hover figcaption {
+    transform: translateY(0); }
+  .leadership-section .founder-bio h3 {
+    font-size: 1.5rem; }
+  .leadership-section .founder-bio p {
+    font-size: .9rem; }
+
+  /* --- difference section ----*/
+  .section-difference {
+    height: 280vw; }
+    .section-difference .left-side {
+      height: 80vw; }
+    .section-difference .left-side .text-box {
+      width: 90%; }
+    .section-difference .right-side {
+      height: 100vw; }
+    .section-difference .right-side li {
+      width: 100%;
+      height: 50%; }
+    .section-difference .right-side li:nth-child(1),
+    .section-difference .right-side li:nth-child(3) {
+      background-color: #f1f1f1; }
+    .section-difference .right-side li:nth-child(2),
+    .section-difference .right-side li:nth-child(4) {
+      background-color: #e0e0e0; }
+
+  /* --- industries section ----*/
+  .indutries-section {
+    height: 235vw;
+    background-size: 100vw 130vw;
+    padding-top: 40px; }
+    .indutries-section .wrapper {
+      top: 130vw; }
+    .indutries-section .industries li {
+      width: 100%; }
+    .indutries-section .industries .industry-photo {
+      height: 50vw; }
+
+  /* --- industries section ----*/
+  .services-section {
+    height: 175vw; }
+    .services-section h2 {
+      margin-bottom: 40px; }
+    .services-section ul.services-list {
+      position: initial;
+      width: 100vw; }
+    .services-section ul.services-list li a.tab {
+      padding-left: 3rem; }
+    .services-section ul.services-list li.active a.tab::before,
+    .services-section ul.services-list li:hover a.tab::before {
+      left: 25px; }
+    .services-section .service-description {
+      position: initial;
+      padding: 2rem 1rem 0 3rem;
+      width: 100vw;
+      height: 82vw; }
+
+  /* --- contact section ----*/
+  .contact-section {
+    height: 180vw; }
+    .contact-section .map {
+      height: 100vw; }
+    .contact-section .contact-us {
+      height: auto; } }
+/****************************
+        Max Width 767px
+****************************/
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 16px; }
+
+  /* --- difference section ----*/
+  .section-difference ul.right-side li:hover p {
+    top: 149px; }
+
+  /* --- industries section ----*/
+  .services-section {
+    height: 190vw; }
+    .services-section ul.services-list li a.tab {
+      padding-left: 3.25rem; }
+    .services-section .service-description {
+      height: 90vw; }
+
+  /* --- contact section ----*/
+  .contact-section {
+    height: 200vw; }
+    .contact-section .map {
+      height: 110vw; }
+    .contact-section .contact-us {
+      height: auto; }
+    .contact-section .contact-us h3 {
+      margin-bottom: 3vw; }
+    .contact-section .contact-us p {
+      margin-bottom: 7vw; } }
+
 /*# sourceMappingURL=style.css.map */
