@@ -36,7 +36,8 @@
   -webkit-animation-duration: .5s;
           animation-duration: .5s;
   webkit-animation-delay: 1s;
-          animation-delay: 1s;
+          -webkit-animation-delay: 1s;
+                  animation-delay: 1s;
 }
 
 

@@ -166,7 +166,8 @@
     }
 
     figure.founder-photo img {
-      transform: translateY(-64px);
+      -webkit-transform: translateY(-64px);
+              transform: translateY(-64px);
     }
 
     figure.founder-photo figcaption {
@@ -197,7 +198,8 @@
       width: 80%;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
     }
 
     .left-side .text-box h2 {
@@ -323,15 +325,19 @@
 
       figure.founder-photo { height: 78vw; }
 
-      figure.founder-photo img { transform: translateY(-30px); }
+      figure.founder-photo img { -webkit-transform: translateY(-30px); transform: translateY(-30px); }
 
       figure.founder-photo figcaption {
         padding: 1rem;
-        transform: translateY(10%);
+        -webkit-transform: translateY(10%);
+                transform: translateY(10%);
+        -webkit-transition: -webkit-transform 0.25s;
+        transition: -webkit-transform 0.25s;
         transition: transform 0.25s;
+        transition: transform 0.25s, -webkit-transform 0.25s;
       }
 
-      figure.founder-photo:hover figcaption { transform: translateY(0); }
+      figure.founder-photo:hover figcaption { -webkit-transform: translateY(0); transform: translateY(0); }
 
       .founder-bio h3 { font-size: 1.5rem; }
 

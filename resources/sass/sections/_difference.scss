@@ -23,7 +23,8 @@
 .left-side .text-box {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 
@@ -83,18 +84,26 @@ ul.right-side  li .value {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
+    -webkit-transition: top .35s, -webkit-transform .35s;
+    transition: top .35s, -webkit-transform .35s;
     transition: transform .35s, top .35s;
+    transition: transform .35s, top .35s, -webkit-transform .35s;
 
 }
 
 ul.right-side .analysis-icon {
   width: 90px;
   margin: 0 auto;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: width .5s, -webkit-transform .5s;
+  transition: width .5s, -webkit-transform .5s;
   transition: transform .5s, width .5s;
+  transition: transform .5s, width .5s, -webkit-transform .5s;
 
 }
 
@@ -106,7 +115,8 @@ ul.right-side .analysis-icon {
 ul.right-side li:hover {
 
   .analysis-icon  {
-    transform: scale(.7);
+    -webkit-transform: scale(.7);
+            transform: scale(.7);
   }
 
   .analysis-icon path {
@@ -115,13 +125,15 @@ ul.right-side li:hover {
 
   .value {
     top: 90px;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 
   p {
     opacity: 1;
     top: 210px;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
@@ -132,10 +144,12 @@ ul.right-side li  p {
   left: 50%;
   font-size: .9rem;
   text-align: center;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 80%;
   margin: 0 auto;
   opacity: 0;
+  -webkit-transition: opacity .35s, top .35s;
   transition: opacity .35s, top .35s;
 }
 
@@ -146,4 +160,4 @@ ul.right-side li  p {
 
 
 
-//
+/**/

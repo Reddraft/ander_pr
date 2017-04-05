@@ -96,6 +96,7 @@
       line-height: 100%;
       vertical-align: middle;
       display: table-cell;
+      -webkit-transition: border .5s;
       transition: border .5s;
     }
 
