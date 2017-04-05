@@ -14,6 +14,11 @@ $(document).ready(function() {
     $('#menu-overlay').toggleClass('open');
   });
 
+  $('.logo').click(function() {
+    $('#menu-overlay').removeClass('open');
+    $('#toggle').removeClass('active');
+  });
+
 
   /***********************
   *** STICKY NAVIGATION **
@@ -57,6 +62,75 @@ $(document).ready(function() {
       }
     });
   });
+
+  /******************************
+  *** ANIMATIONS ON SCROLLING **
+  *******************************/
+
+  // header animations
+  $('.js-wp-animate-nav').addClass('animated fadeInDown');
+  $('.js-wp-animate-hero-text-box').addClass('animated fadeInUp');
+
+  // about animations
+  $('.js-section-about').waypoint(function() {
+    $('.js-wp-animate-left-box-about').addClass('animated  fadeInLeftBig');
+    $('.js-wp-animate-right-box-about').addClass('animated fadeInRightBig');
+  }, {
+    offset: '200px;'
+  });
+  $('.js-wp-animate-left-box-about').waypoint(function() {
+    $('.js-wp-animate-expertises').addClass('animated  fadeInUp');
+  }, {
+    offset: '200px;'
+  });
+
+  // leadership animations
+  $('.js-section-leadership').waypoint(function() {
+      $('.js-wp-animate-founder1').addClass('animated fadeInLeftBig');
+      $('.js-wp-animate-founder2').addClass('animated fadeInRightBig');
+  }, {
+    offset: '200px;'
+  });
+
+  // difference animations
+  $('.js-section-difference').waypoint(function() {
+      $('.js-wp-animate-left-side-difference').addClass('animated fadeInLeftBig');
+      $('.js-wp-animate-right-side-value1').addClass('animated fadeIn');
+      $('.js-wp-animate-right-side-value2').addClass('animated fadeIn');
+      $('.js-wp-animate-right-side-value3').addClass('animated fadeIn');
+      $('.js-wp-animate-right-side-value4').addClass('animated fadeIn');
+  }, {
+    offset: '200px;'
+  });
+
+  // industries animations
+  $('.js-section-industries').waypoint(function() {
+      $('.js-wp-animate-industries-heading').addClass('animated fadeInDown');
+      $('.js-wp-animate-industries-wrapper').addClass('animated fadeInUp');
+  }, {
+    offset: '200px;'
+  });
+
+  // services animations
+  $('.js-section-services').waypoint(function() {
+      $('.js-wp-animate-services-heading').addClass('animated fadeInDown');
+      $('.js-wp-animate-services-list').addClass('animated fadeInLeftBig');
+      $('.js-wp-animate-services-descriptions').addClass('animated fadeInRightBig');
+  }, {
+    offset: '200px;'
+  });
+
+  // contact animations
+  $('.js-section-contact').waypoint(function() {
+      $('.js-wp-animate-contact-map').addClass('animated fadeInLeftBig');
+      $('.js-wp-animate-contact-info').addClass('animated fadeInRightBig');
+  }, {
+    offset: '200px;'
+  });
+
+
+
+
 
 
 

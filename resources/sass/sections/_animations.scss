@@ -1,0 +1,217 @@
+/***************************
+** ANIMATIONS ANIMATE.CSS **
+***************************/
+
+/**** HEADER ANIMATIONS ******/
+.js-wp-animate-nav {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.js-wp-animate-hero-text-box {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+/**** ABOUT ANIMATIONS ******/
+
+
+.js-wp-animate-left-box-about,
+.js-wp-animate-right-box-about,
+.js-wp-animate-expertises  {
+  opacity: 0;
+}
+
+.js-wp-animate-left-box-about.animated,
+.js-wp-animate-right-box-about.animated,
+.js-wp-animate-expertises.animated  {
+  opacity: 1;
+}
+
+.js-wp-animate-left-box-about{
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+
+.js-wp-animate-right-box-about {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+
+.js-wp-animate-expertises {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+/**** LEADERSHIP ANIMATIONS ******/
+
+.js-wp-animate-founder1,
+.js-wp-animate-founder2 {
+  opacity: 0;
+}
+
+.js-wp-animate-founder1.animated,
+.js-wp-animate-founder2.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-founder1 {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.js-wp-animate-founder2 {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+/**** DIFFERENCE ANIMATIONS ******/
+
+.js-wp-animate-left-side-difference,
+.js-wp-animate-right-side-value1,
+.js-wp-animate-right-side-value2,
+.js-wp-animate-right-side-value3,
+.js-wp-animate-right-side-value4 {
+  opacity: 0;
+}
+
+.js-wp-animate-left-side-difference.animated,
+.js-wp-animate-right-side-value1.animated,
+.js-wp-animate-right-side-value2.animated,
+.js-wp-animate-right-side-value3.animated,
+.js-wp-animate-right-side-value4.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-left-side-difference {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.js-wp-animate-right-side-value1 {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.js-wp-animate-right-side-value2 {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.js-wp-animate-right-side-value3 {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+.js-wp-animate-right-side-value4 {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+/**** DIFFERENCE ANIMATIONS ******/
+
+.js-wp-animate-industries-heading,
+.js-wp-animate-industries-wrapper {
+  opacity: 0;
+}
+
+.js-wp-animate-industries-heading.animated,
+.js-wp-animate-industries-wrapper.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-industries-heading {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.js-wp-animate-industries-wrapper {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+/**** SERVICES ANIMATIONS ******/
+
+.js-wp-animate-services-heading,
+.js-wp-animate-services-list,
+.js-wp-animate-services-descriptions {
+  opacity: 0;
+}
+
+.js-wp-animate-services-heading.animated,
+.js-wp-animate-services-list.animated,
+.js-wp-animate-services-descriptions.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-services-heading {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.js-wp-animate-services-list {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.js-wp-animate-services-descriptions {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+
+/**** CONTACT ANIMATIONS ******/
+
+.js-wp-animate-contact-map,
+.js-wp-animate-contact-info {
+  opacity: 0;
+}
+
+.js-wp-animate-contact-map.animated,
+.js-wp-animate-contact-info.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-contact-map {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.js-wp-animate-contact-info  {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
