@@ -68,8 +68,8 @@ $(document).ready(function() {
   *******************************/
 
   // header animations
-  $('.js-wp-animate-nav').addClass('animated fadeIn');
-  $('.js-wp-animate-hero-text-box').addClass('animated fadeIn');
+  $('.js-wp-animate-nav').addClass('animated fadeInDown');
+  $('.js-wp-animate-hero-text-box').addClass('animated fadeInUp');
 
   // about animations
   $('.js-section-about').waypoint(function() {
@@ -113,8 +113,8 @@ $(document).ready(function() {
 
   // services animations
   $('.js-section-services').waypoint(function() {
-      $('.js-wp-animate-services-heading').addClass('animated fadeInDown');
-      $('.js-wp-animate-services-list').addClass('animated fadeInUp');
+      $('.js-wp-animate-services-heading').addClass('animated fadeIn');
+      $('.js-wp-animate-services-list').addClass('animated fadeIn');
       $('.js-wp-animate-services-descriptions').addClass('animated fadeIn');
   }, {
     offset: '200px;'
