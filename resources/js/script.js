@@ -87,7 +87,7 @@ $(document).ready(function() {
   // leadership animations
   $('.js-section-leadership').waypoint(function() {
       $('.js-wp-animate-founder1').addClass('animated fadeInLeft');
-      $('.js-wp-animate-founder2').addClass('animated fadeIn');
+      $('.js-wp-animate-founder2').addClass('animated slideInRight');
   }, {
     offset: '200px;'
   });
