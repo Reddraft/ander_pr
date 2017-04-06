@@ -128,6 +128,14 @@ $(document).ready(function() {
     offset: '200px;'
   });
 
+  /*********************************************************
+   click instead of hover on program images on mobile device
+  *********************************************************/
+
+  [].slice.call( document.querySelectorAll('figure.founder-photo figcaption a') ).forEach( function(el) {
+    el.onclick = function() { return false; }
+  } );
+
 
 
   /*******************************
