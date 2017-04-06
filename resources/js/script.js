@@ -71,26 +71,26 @@ $(document).ready(function() {
   // $('.js-wp-animate-nav').addClass('animated fadeInDown');
   // $('.js-wp-animate-hero-text-box').addClass('animated fadeInUp');
   //
-  // about animations
-  $('.js-section-about').waypoint(function() {
-    $('.js-wp-animate-left-box-about').addClass('animated  fadeInLeftBig');
-    $('.js-wp-animate-right-box-about').addClass('animated fadeInRightBig');
-  }, {
-    offset: '200px;'
-  });
-  $('.js-wp-animate-left-box-about').waypoint(function() {
-    $('.js-wp-animate-expertises').addClass('animated  fadeInUp');
-  }, {
-    offset: '200px;'
-  });
-
-  // leadership animations
-  $('.js-section-leadership').waypoint(function() {
-      $('.js-wp-animate-founder1').addClass('animated fadeInLeftBig');
-      $('.js-wp-animate-founder2').addClass('animated fadeInRightBig');
-  }, {
-    offset: '200px;'
-  });
+  // // about animations
+  // $('.js-section-about').waypoint(function() {
+  //   $('.js-wp-animate-left-box-about').addClass('animated  fadeInLeftBig');
+  //   $('.js-wp-animate-right-box-about').addClass('animated fadeInRightBig');
+  // }, {
+  //   offset: '200px;'
+  // });
+  // $('.js-wp-animate-left-box-about').waypoint(function() {
+  //   $('.js-wp-animate-expertises').addClass('animated  fadeInUp');
+  // }, {
+  //   offset: '200px;'
+  // });
+  //
+  // // leadership animations
+  // $('.js-section-leadership').waypoint(function() {
+  //     $('.js-wp-animate-founder1').addClass('animated fadeInLeftBig');
+  //     $('.js-wp-animate-founder2').addClass('animated fadeInRightBig');
+  // }, {
+  //   offset: '200px;'
+  // });
 
   // difference animations
   $('.js-section-difference').waypoint(function() {
