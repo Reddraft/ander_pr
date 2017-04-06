@@ -135,6 +135,9 @@ $(document).ready(function() {
   [].slice.call( document.querySelectorAll('figure.founder-photo figcaption a') ).forEach( function(el) {
     el.onclick = function() { return false; }
   } );
+  [].slice.call( document.querySelectorAll('.section-difference ul.right-side li a') ).forEach( function(el) {
+    el.onclick = function() { return false; }
+  } );
 
 
 
