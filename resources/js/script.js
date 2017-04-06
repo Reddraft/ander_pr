@@ -114,8 +114,8 @@ $(document).ready(function() {
   // services animations
   $('.js-section-services').waypoint(function() {
       $('.js-wp-animate-services-heading').addClass('animated fadeInDown');
-      $('.js-wp-animate-services-list').addClass('animated fadeInLeft');
-      $('.js-wp-animate-services-descriptions').addClass('animated fadeInRight');
+      $('.js-wp-animate-services-list').addClass('animated zoomIn');
+      $('.js-wp-animate-services-descriptions').addClass('animated slideInRight');
   }, {
     offset: '200px;'
   });
@@ -123,7 +123,7 @@ $(document).ready(function() {
   // contact animations
   $('.js-section-contact').waypoint(function() {
       $('.js-wp-animate-contact-map').addClass('animated fadeInLeft');
-      $('.js-wp-animate-contact-info').addClass('animated fadeInRight');
+      $('.js-wp-animate-contact-info').addClass('animated zoomIn');
   }, {
     offset: '200px;'
   });
