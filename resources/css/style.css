@@ -539,8 +539,8 @@ nav {
   visibility: visible;
   height: 100vh; }
   .menu-overlay.open li {
-    -webkit-animation: fadeInRight .5s ease forwards;
-    animation: fadeInRight .5s ease forwards;
+    -webkit-animation: fade-In-Right .5s ease forwards;
+    animation: fade-In-Right .5s ease forwards;
     /*animation: name duration timing-function delay iteration-count direction fill-mode play-state;*/ }
   .menu-overlay.open li:nth-of-type(1) {
     -webkit-animation-delay: .4s;
@@ -653,7 +653,6 @@ nav {
   padding: 0; }
 
 .founder-box {
-  position: relative;
   width: 50%;
   float: left;
   margin: 0; }
