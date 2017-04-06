@@ -73,13 +73,13 @@ $(document).ready(function() {
 
   // about animations
   $('.js-section-about').waypoint(function() {
-    $('.js-wp-animate-left-box-about').addClass('animated fadeIn');
-    $('.js-wp-animate-right-box-about').addClass('animated fadeIn');
+    $('.js-wp-animate-left-box-about').addClass('animated slideInLeft');
+    $('.js-wp-animate-right-box-about').addClass('animated slideInRight');
   }, {
     offset: '200px;'
   });
   $('.js-wp-animate-left-box-about').waypoint(function() {
-    $('.js-wp-animate-expertises').addClass('animated  fadeIn');
+    $('.js-wp-animate-expertises').addClass('animated  fadeInUp');
   }, {
     offset: '200px;'
   });

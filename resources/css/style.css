@@ -215,13 +215,13 @@ section, footer {
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
   -webkit-animation-delay: 1s;
-  animation-delay: 15s; }
+  animation-delay: 1s; }
 
 .js-wp-animate-expertises {
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s; }
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s; }
 
 /**** LEADERSHIP ANIMATIONS ******/
 .js-wp-animate-founder1,
