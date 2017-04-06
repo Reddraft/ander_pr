@@ -73,8 +73,8 @@ $(document).ready(function() {
 
   // about animations
   $('.js-section-about').waypoint(function() {
-    $('.js-wp-animate-left-box-about').addClass('animated slideInLeft');
-    $('.js-wp-animate-right-box-about').addClass('animated slideInRight');
+    $('.js-wp-animate-left-box-about').addClass('animated fadeInLeft');
+    $('.js-wp-animate-right-box-about').addClass('animated fadeInRight');
   }, {
     offset: '200px;'
   });

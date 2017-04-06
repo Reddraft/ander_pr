@@ -615,7 +615,8 @@ nav {
         .section-about .description-wrapper .left-box h3 span {
           font-weight: 700; }
     .section-about .description-wrapper .right-box {
-      padding: 2% 5% 2% 1%; }
+      padding: 2% 5% 2% 1%;
+      position: relative; }
       .section-about .description-wrapper .right-box p {
         line-height: 150%; }
         .section-about .description-wrapper .right-box p:first-child {
