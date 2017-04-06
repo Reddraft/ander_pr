@@ -455,7 +455,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
   background-image: -webkit-linear-gradient(left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98));
   background-image: linear-gradient(left, rgba(43, 88, 118, 0.98), rgba(78, 67, 118, 0.98));
   z-index: 30;
