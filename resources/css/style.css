@@ -1517,6 +1517,13 @@ footer {
     .section-difference .right-side {
       height: 70%; }
       .section-difference .right-side li {
-        height: 25%; } }
+        height: 25%; }
+
+  /* --- difference section ----*/
+  .leadership-section figure.founder-photo {
+    height: 111vw; }
+  .leadership-section figure.founder-photo img {
+    -webkit-transform: translateY(25px) scale(1.25);
+    transform: translateY(25px) scale(1.25); } }
 
 /*# sourceMappingURL=style.css.map */

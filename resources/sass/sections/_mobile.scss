@@ -12,7 +12,8 @@ and (max-device-width : 767px) {
     .menu-overlay .main-nav { top: 56%; }
     .menu-overlay ul li a { font-size: 1.4rem; }
   }
-    /* --- difference section ----*/
+
+  /* --- difference section ----*/
   .section-difference {
       height: 400vw;
 
@@ -25,4 +26,15 @@ and (max-device-width : 767px) {
     }
   }
 
+  /* --- difference section ----*/
+  .leadership-section {
+    figure.founder-photo {
+      height: 111vw;
+    }
+
+    figure.founder-photo img {
+       -webkit-transform: translateY(25px) scale(1.25);
+               transform: translateY(25px) scale(1.25);
+    }
+  }
 }
