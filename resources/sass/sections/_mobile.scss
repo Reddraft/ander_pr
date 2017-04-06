@@ -1,0 +1,12 @@
+/* iPhone 6 ----------- */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  /* --- header section ----*/
+  header {
+    .hero-text-box span { font-size: 2.2rem; }
+    .menu-overlay .main-nav { top: 56%; }
+    .menu-overlay ul li a { font-size: 1.4rem; }
+  }
+}

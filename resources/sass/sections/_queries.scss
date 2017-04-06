@@ -471,20 +471,3 @@
   }
 
 }
-
-
-/* iPhone 6 ----------- */
-@media only screen and (min-device-width: 375px)
-and (max-device-height: 667px)
-and (orientation : portrait)
-and (-webkit-device-pixel-ratio: 2) {
-
-  /* --- header section ----*/
-  header {
-    .hero-text-box span { font-size: 1rem; }
-    .menu-overlay .main-nav { top: 56%; }
-    .menu-overlay ul li a { font-size: 1rem; }
-  }
-
-
-}
