@@ -237,7 +237,7 @@ nav {
   height: 100vh;
 
   li {
-    @include animation('fadeInRight .5s ease forwards');
+    @include animation('fade-In-Right .5s ease forwards');
     /*animation: name duration timing-function delay iteration-count direction fill-mode play-state;*/
   }
   li:nth-of-type(1) {
