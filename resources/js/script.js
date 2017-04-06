@@ -73,8 +73,8 @@ $(document).ready(function() {
 
   // about animations
   $('.js-section-about').waypoint(function() {
-    $('.js-wp-animate-left-box-about').addClass('animated  fadeInLeftBig');
-    $('.js-wp-animate-right-box-about').addClass('animated fadeInRightBig');
+    $('.js-wp-animate-left-box-about').addClass('animated slideInLeft');
+    $('.js-wp-animate-right-box-about').addClass('animated slideInRight');
   }, {
     offset: '200px;'
   });
@@ -86,15 +86,15 @@ $(document).ready(function() {
 
   // leadership animations
   $('.js-section-leadership').waypoint(function() {
-      $('.js-wp-animate-founder1').addClass('animated fadeInLeftBig');
-      $('.js-wp-animate-founder2').addClass('animated fadeInRightBig');
+      $('.js-wp-animate-founder1').addClass('animated slideInLeft');
+      $('.js-wp-animate-founder2').addClass('animated slideInRight');
   }, {
     offset: '200px;'
   });
 
   // difference animations
   $('.js-section-difference').waypoint(function() {
-      $('.js-wp-animate-left-side-difference').addClass('animated fadeInLeftBig');
+      $('.js-wp-animate-left-side-difference').addClass('animated slideInLeft');
       $('.js-wp-animate-right-side-value1').addClass('animated fadeIn');
       $('.js-wp-animate-right-side-value2').addClass('animated fadeIn');
       $('.js-wp-animate-right-side-value3').addClass('animated fadeIn');
@@ -114,16 +114,16 @@ $(document).ready(function() {
   // services animations
   $('.js-section-services').waypoint(function() {
       $('.js-wp-animate-services-heading').addClass('animated fadeIn');
-      $('.js-wp-animate-services-list').addClass('animated fadeInLeftBig');
-      $('.js-wp-animate-services-descriptions').addClass('animated fadeInRightBig');
+      $('.js-wp-animate-services-list').addClass('animated slideInLeft');
+      $('.js-wp-animate-services-descriptions').addClass('animated slideInRight');
   }, {
     offset: '200px;'
   });
 
   // contact animations
   $('.js-section-contact').waypoint(function() {
-      $('.js-wp-animate-contact-map').addClass('animated fadeInLeftBig');
-      $('.js-wp-animate-contact-info').addClass('animated fadeInRightBig');
+      $('.js-wp-animate-contact-map').addClass('animated slideInLeft');
+      $('.js-wp-animate-contact-info').addClass('animated slideInRight');
   }, {
     offset: '200px;'
   });
