@@ -185,14 +185,14 @@ section, footer {
 .js-wp-animate-nav {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s; }
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s; }
 
 .js-wp-animate-hero-text-box {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s; }
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s; }
 
 /**** ABOUT ANIMATIONS ******/
 .js-wp-animate-left-box-about,
