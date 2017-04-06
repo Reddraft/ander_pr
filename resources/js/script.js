@@ -115,7 +115,7 @@ $(document).ready(function() {
   $('.js-section-services').waypoint(function() {
       $('.js-wp-animate-services-heading').addClass('animated fadeInDown');
       $('.js-wp-animate-services-list').addClass('animated fadeIn');
-      $('.js-wp-animate-services-descriptions').addClass('animated slideInRight');
+      $('.js-wp-animate-services-descriptions').addClass('animated fadeInRight');
   }, {
     offset: '200px;'
   });

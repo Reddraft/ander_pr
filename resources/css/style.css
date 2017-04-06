@@ -1056,10 +1056,11 @@ ul.industries .industry-photo:hover {
   .services-section ul.services-list li.active a.tab {
     background-color: #f1f1f1; }
   .services-section .service-description {
+    position: absolute;
     display: none;
     width: 50vw;
     top: 17vw;
-    left: 50vw;
+    right: 0;
     height: 40vw;
     text-align: left;
     padding: 3rem 2rem 0 2rem;
