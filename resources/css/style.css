@@ -198,8 +198,7 @@ section, footer {
 .js-wp-animate-left-box-about,
 .js-wp-animate-right-box-about,
 .js-wp-animate-expertises {
-  opacity: 0;
-  position: relative; }
+  opacity: 0; }
 
 .js-wp-animate-left-box-about.animated,
 .js-wp-animate-right-box-about.animated,
@@ -227,8 +226,7 @@ section, footer {
 /**** LEADERSHIP ANIMATIONS ******/
 .js-wp-animate-founder1,
 .js-wp-animate-founder2 {
-  opacity: 0;
-  position: relative; }
+  opacity: 0; }
 
 .js-wp-animate-founder1.animated,
 .js-wp-animate-founder2.animated {
