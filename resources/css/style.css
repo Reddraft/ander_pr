@@ -827,7 +827,8 @@ ul.right-side li {
   width: 50%;
   height: 50%;
   float: left;
-  -webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+  overflow: hidden; }
   ul.right-side li a {
     position: absolute;
     top: 0;
@@ -835,7 +836,7 @@ ul.right-side li {
     bottom: 0;
     left: 0;
     text-indent: 200%;
-    white-space: nowrap;
+    white-space: normal;
     font-size: 0;
     opacity: 0; }
 
