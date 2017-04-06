@@ -74,7 +74,7 @@ $(document).ready(function() {
   // about animations
   $('.js-section-about').waypoint(function() {
     $('.js-wp-animate-left-box-about').addClass('animated fadeInLeft');
-    $('.js-wp-animate-right-box-about').addClass('animated fadeInRight');
+    $('.js-wp-animate-right-box-about').addClass('animated fadeIn');
   }, {
     offset: '200px;'
   });
@@ -86,7 +86,7 @@ $(document).ready(function() {
 
   // leadership animations
   $('.js-section-leadership').waypoint(function() {
-      $('.js-wp-animate-founder1').addClass('animated fadeIn');
+      $('.js-wp-animate-founder1').addClass('animated fadeInLeft');
       $('.js-wp-animate-founder2').addClass('animated fadeIn');
   }, {
     offset: '200px;'

@@ -11,6 +11,7 @@
     .left-box {
       padding: 2% 1% 2% 5%;
       position: relative;
+      display: block;
 
       h2 {
         font-weight: $font-body-normal;
@@ -48,6 +49,7 @@
     .right-box {
       padding: 2% 5% 2% 1%;
       position: relative;
+      display: block;
 
       p {
         line-height: 150%;
@@ -63,6 +65,7 @@
   .expertises-wrapper {
     background-color: $light-gray-colour;
     position: relative;
+    display: block;
 
     .expertises {
       height: 100%;
