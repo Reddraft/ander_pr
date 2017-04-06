@@ -1507,6 +1507,16 @@ footer {
     header .menu-overlay .main-nav {
       top: 56%; }
     header .menu-overlay ul li a {
-      font-size: 1.4rem; } }
+      font-size: 1.4rem; }
+
+  /* --- difference section ----*/
+  .section-difference {
+    height: 400vw; }
+    .section-difference .left-side {
+      height: 30%; }
+    .section-difference .right-side {
+      height: 70%; }
+      .section-difference .right-side li {
+        height: 25%; } }
 
 /*# sourceMappingURL=style.css.map */

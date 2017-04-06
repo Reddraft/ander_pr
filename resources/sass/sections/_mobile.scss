@@ -2,6 +2,7 @@
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 767px) {
+
   /* --- header section ----*/
   header {
     position: relative;
@@ -11,4 +12,17 @@ and (max-device-width : 767px) {
     .menu-overlay .main-nav { top: 56%; }
     .menu-overlay ul li a { font-size: 1.4rem; }
   }
+    /* --- difference section ----*/
+  .section-difference {
+      height: 400vw;
+
+    .left-side {
+      height: 30%;
+    }
+    .right-side {
+      height: 70%;
+      li { height: 25%; }
+    }
+  }
+
 }
