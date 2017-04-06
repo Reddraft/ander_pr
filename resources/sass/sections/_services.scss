@@ -63,7 +63,8 @@
     content: url(../img/icons/right.svg);
     width: 20px;
     height: 20px;
-    transform: translate3d(0, -50%, 0);
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
     display: block;
     line-height: 100%;
   }

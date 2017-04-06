@@ -331,10 +331,8 @@
         padding: 1rem;
         -webkit-transform: translateY(10%);
                 transform: translateY(10%);
-        -webkit-transition: -webkit-transform 0.25s;
-        transition: -webkit-transform 0.25s;
-        transition: transform 0.25s;
-        transition: transform 0.25s, -webkit-transform 0.25s;
+        -webkit-transition: all .25s
+                transition: all .25s
       }
 
       figure.founder-photo:hover figcaption { -webkit-transform: translateY(0); transform: translateY(0); }

@@ -96,7 +96,6 @@ nav {
     height: 2px;
     width: 100%;
     display: inline-block;
-    -webkit-transition: all .35s ease;
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
 
@@ -179,8 +178,7 @@ nav {
   opacity: 0; /* initial state*/
   visibility: hidden; /* initial state*/
   -webkit-transition: opacity .35s, visibility .35s, height .35s;
-  -webkit-transition: opacity .35s, visibility .35, height .35s;
-  transition: opacity .35s, visibility .35, height .35s;
+          transition: opacity .35s, visibility .35s, height .35s;
   @include linear-gradient-simple(left, rgba(43, 88, 118, .98), rgba(78, 67, 118, .98));
 
   .main-nav {
@@ -214,9 +212,8 @@ nav {
     font-size: $navigation-font-size;
     text-decoration: none;
     letter-spacing: inherit;
-    -webkit-transition: color 1s ease;
     -webkit-transition: color .25s ease, text-decoration .25s ease, letter-spacing .25s ease;
-    transition: color .25s ease, text-decoration .25s ease, letter-spacing .25s ease;
+            transition: color .25s ease, text-decoration .25s ease, letter-spacing .25s ease;
   }
 
 
@@ -281,8 +278,8 @@ nav {
   width: 1040px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 
   span {
     color: $white-colour;

@@ -80,7 +80,7 @@
     ul.social-links li a:visited {
       color: $purple-colour;
       -webkit-transition: color .5s;
-      transition: color .5s;
+              transition: color .5s;
     }
 
     ul.social-links li a:hover,
@@ -97,7 +97,7 @@
       vertical-align: middle;
       display: table-cell;
       -webkit-transition: border .5s;
-      transition: border .5s;
+              transition: border .5s;
     }
 
     ul.social-links li i:hover {
