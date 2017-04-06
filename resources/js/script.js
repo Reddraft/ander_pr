@@ -94,7 +94,7 @@ $(document).ready(function() {
 
   // difference animations
   $('.js-section-difference').waypoint(function() {
-      $('.js-wp-animate-left-side-difference').addClass('animated fadeIn');
+      $('.js-wp-animate-left-side-difference').addClass('animated fadeInLeft');
       $('.js-wp-animate-right-side-value1').addClass('animated fadeIn');
       $('.js-wp-animate-right-side-value2').addClass('animated fadeIn');
       $('.js-wp-animate-right-side-value3').addClass('animated fadeIn');
@@ -105,25 +105,25 @@ $(document).ready(function() {
 
   // industries animations
   $('.js-section-industries').waypoint(function() {
-      $('.js-wp-animate-industries-heading').addClass('animated fadeIn');
-      $('.js-wp-animate-industries-wrapper').addClass('animated fadeIn');
+      $('.js-wp-animate-industries-heading').addClass('animated fadeInDown');
+      $('.js-wp-animate-industries-wrapper').addClass('animated fadeInUp');
   }, {
     offset: '200px;'
   });
 
   // services animations
   $('.js-section-services').waypoint(function() {
-      $('.js-wp-animate-services-heading').addClass('animated fadeIn');
-      $('.js-wp-animate-services-list').addClass('animated fadeIn');
-      $('.js-wp-animate-services-descriptions').addClass('animated fadeIn');
+      $('.js-wp-animate-services-heading').addClass('animated fadeInDown');
+      $('.js-wp-animate-services-list').addClass('animated fadeInLeft');
+      $('.js-wp-animate-services-descriptions').addClass('animated fadeInRight');
   }, {
     offset: '200px;'
   });
 
   // contact animations
   $('.js-section-contact').waypoint(function() {
-      $('.js-wp-animate-contact-map').addClass('animated fadeIn');
-      $('.js-wp-animate-contact-info').addClass('animated fadeIn');
+      $('.js-wp-animate-contact-map').addClass('animated fadeInLeft');
+      $('.js-wp-animate-contact-info').addClass('animated fadeInRight');
   }, {
     offset: '200px;'
   });
