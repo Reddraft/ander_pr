@@ -1309,28 +1309,24 @@
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    left: -50%;
   }
 
   to {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+    left: 0;
   }
 }
 
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    left: -50%;
   }
 
   to {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+    left: 0;
   }
 }
 
