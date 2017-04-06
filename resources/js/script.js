@@ -114,7 +114,7 @@ $(document).ready(function() {
   // services animations
   $('.js-section-services').waypoint(function() {
       $('.js-wp-animate-services-heading').addClass('animated fadeInDown');
-      $('.js-wp-animate-services-list').addClass('animated zoomIn');
+      $('.js-wp-animate-services-list').addClass('animated fadeIn');
       $('.js-wp-animate-services-descriptions').addClass('animated slideInRight');
   }, {
     offset: '200px;'
