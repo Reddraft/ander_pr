@@ -47,7 +47,7 @@ $(document).ready(function() {
   }, {
     offset: '100px;'
   });
-  
+
   /***********************
   *** STICKY NAVIGATION **
   ************************/
@@ -155,6 +155,9 @@ $(document).ready(function() {
     el.onclick = function() { return false; }
   } );
   [].slice.call( document.querySelectorAll('ul.right-side li a') ).forEach( function(el) {
+    el.onclick = function() { return false; }
+  } );
+  [].slice.call( document.querySelectorAll('ul.industries .industry-photo a') ).forEach( function(el) {
     el.onclick = function() { return false; }
   } );
 

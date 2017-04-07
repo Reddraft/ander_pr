@@ -46,4 +46,15 @@ and (max-device-width : 767px) {
                transform: translateY(25px) scale(1.25);
     }
   }
+
+  /* --- industries section ----*/
+  .indutries-section {
+    height: 245vw;
+    background-size: 100vw 140vw;
+    padding-top: 50px;
+
+    .wrapper { top: 140vw; }
+  }
+
+
 }
