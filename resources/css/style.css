@@ -1531,6 +1531,10 @@ footer {
       margin-bottom: 7vw; } }
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  /* --- general ----*/
+  h2 {
+    font-size: 2.3rem !important; }
+
   /* --- header section ----*/
   header {
     position: relative;
