@@ -55,7 +55,9 @@ and (max-device-width : 767px) {
 
     .wrapper { top: 150vw; }
 
-    .industries .industry-photo { height: 55vw; }
+    ul.industries .industry-photo { height: 55vw; }
+    ul.industries .industry-photo:hover h3 { top: 20%; }
+    ul.industries .industry-photo:hover p { top: 30%; }
 
   }
 

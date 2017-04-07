@@ -1571,7 +1571,11 @@ footer {
     padding-top: 50px; }
     .indutries-section .wrapper {
       top: 150vw; }
-    .indutries-section .industries .industry-photo {
-      height: 55vw; } }
+    .indutries-section ul.industries .industry-photo {
+      height: 55vw; }
+    .indutries-section ul.industries .industry-photo:hover h3 {
+      top: 20%; }
+    .indutries-section ul.industries .industry-photo:hover p {
+      top: 30%; } }
 
 /*# sourceMappingURL=style.css.map */
