@@ -49,12 +49,13 @@ and (max-device-width : 767px) {
 
   /* --- industries section ----*/
   .indutries-section {
-    height: 245vw;
-    background-size: 100vw 140vw;
+    height: 265vw;
+    background-size: 100vw 150vw;
     padding-top: 50px;
 
-    .wrapper { top: 140vw; }
-  }
+    .wrapper { top: 150vw; }
+
+    .industry-photo { height: 55vw; }
 
 
 }
