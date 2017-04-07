@@ -16,6 +16,7 @@ and (max-device-width : 767px) {
     }
     position: relative;
     background-attachment: scroll;
+    background-position: 30% center;
 
     .hero-text-box span { font-size: 2.2rem; }
     .menu-overlay .main-nav { top: 56%; }

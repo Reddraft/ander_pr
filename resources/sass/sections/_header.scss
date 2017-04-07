@@ -11,7 +11,7 @@ header {
   background-attachment: fixed;
   top: 0;
   left: 0;
-  @include linear-gradient-image(left, rgba(43, 88, 118, 0.4), rgba(78, 67, 118, 0.8), url("img/hero-bg.jpg"));
+  @include linear-gradient-image(to left, rgba(43, 88, 118, 0.4), rgba(78, 67, 118, 0.8), url("img/hero-bg.jpg"));
 }
 
 nav {

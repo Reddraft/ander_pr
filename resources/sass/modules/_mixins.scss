@@ -116,7 +116,7 @@
 
 @mixin linear-gradient-image($direction, $stop-1, $stop2, $image) {
  background-image: -webkit-linear-gradient($direction, $stop-1, $stop2), $image;
- background-image: linear-gradient($direction, $stop-1, $stop2), $image;
+ background-image:         linear-gradient($direction, $stop-1, $stop2), $image;
 }
 
 @mixin linear-gradient-simple($args...) {
