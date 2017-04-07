@@ -1576,6 +1576,12 @@ footer {
     .indutries-section ul.industries .industry-photo:hover h3 {
       top: 20%; }
     .indutries-section ul.industries .industry-photo:hover p {
-      top: 30%; } }
+      top: 30%; }
+
+  /* --- services section ----*/
+  .services-section {
+    height: 220vw; }
+    .services-section .service-description {
+      height: 114vw; } }
 
 /*# sourceMappingURL=style.css.map */
