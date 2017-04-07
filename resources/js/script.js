@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
   /*******************************
   **** FULL SCREEN NAVIGATION ****
   ********************************/
@@ -24,23 +26,40 @@ $(document).ready(function() {
   *** STICKY NAVIGATION **
   ************************/
   $('.js-section-about').waypoint(function(direction) {
-
     if (direction === 'down') {
-      $('nav').fadeOut(function() {
-        $(this).addClass('sticky');
+      //fadeout hide the nav
+      // nav must be fadeOut first in order to fadeIn
+      $('nav').fadeOut("fast", function() {
+        // then add the sticky class to the nav while is hidden
+        $('nav').addClass('sticky');
       });
-      $('nav').fadeIn(200);
+      //show the nav again with the class sticky already added
+      $('nav').fadeIn("slow");
+
     } else {
-      $('nav').fadeOut(200, function() {
-        $(this).removeClass('sticky');
+      //fadeout the nav again
+      $('nav').fadeOut("slow", function() {
+        //remove the sticky class
+        $('nav').removeClass('sticky');
       });
       $('nav').fadeIn();
     }
   }, {
     offset: '100px;'
   });
-
-
+  
+  /***********************
+  *** STICKY NAVIGATION **
+  ************************/
+  $('.js-section-about').waypoint(function(direction) {
+    if (direction === 'down') {
+      $('nav').fadeOut("slow").next().addClass('sticky');
+    } else {
+      $('nav').fadeOut("slow").next().removeClass('sticky');
+    }
+  }, {
+    offset: '100px;'
+  });
 
   /**************************
   *** SCROLL ON NAVIGATION **
@@ -55,7 +74,7 @@ $(document).ready(function() {
         if (target.length) {
           $('html, body').animate({
             //substract 100 to anchor 100px from the top
-            scrollTop: target.offset().top - 99
+            scrollTop: target.offset().top - 60
           }, 1000);
           return false;
         }
