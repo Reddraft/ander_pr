@@ -1582,6 +1582,15 @@ footer {
   .services-section {
     height: 240vw; }
     .services-section .service-description {
-      height: 134vw; } }
+      height: 134vw; }
+    .services-section .service-description h3 {
+      margin-left: -20px; }
+    .services-section .service-description li {
+      text-indent: -20px; }
+
+  .contact-section {
+    height: 226vw; }
+    .contact-section .contact-section .contact-us {
+      height: 116vw; } }
 
 /*# sourceMappingURL=style.css.map */
