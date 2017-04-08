@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+// if(jQuery.browser.mobile)
+// {
+//    console.log('You are using a mobile device!');
+// }
+// else
+// {
+//    console.log('You are not using a mobile device!');
+// }
+
 
 
   /*******************************
@@ -64,23 +73,49 @@ $(document).ready(function() {
   /**************************
   *** SCROLL ON NAVIGATION **
   **************************/
+  
   /* https://css-tricks.com/snippets/jquery/smooth-scrolling */
+  /* jQuery.browser.mobile (http://detectmobilebrowser.com/) */
 
-  $(function() {
-    $('a[href*="#"]:not([href="#"])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html, body').animate({
-            //substract 100 to anchor 100px from the top
-            scrollTop: target.offset().top - 60
-          }, 1000);
-          return false;
+  //check if mobile to offset the navigation
+  if(jQuery.browser.mobile)
+  {
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              //substract 100 to anchor 100px from the top
+              scrollTop: target.offset().top - 60
+            }, 1000);
+            return false;
+          }
         }
-      }
+      });
     });
-  });
+  }
+  else
+  {
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              //substract 100 to anchor 100px from the top
+              scrollTop: target.offset().top - 99
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  }
+
+
 
   /******************************
   *** ANIMATIONS ON SCROLLING **
